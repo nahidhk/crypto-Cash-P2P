@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.nav{
+  height: 70px;
+  width: 100%;
+  background-color: #FFFFFF1F;
+  backdrop-filter: blur(6px);
+  position: fixed;
+  top: 0;
+}
+.img-box{
+  height: 70px;
+  width: 70px;
+}
+.img-box img{
+  height: 100%;width: 100%;
+}
