@@ -1,6 +1,12 @@
+@font-face {
+  font-family: font1;
+  src: url("font/webfont.ttf");
+}
 body{
+  font-family: font1;
   margin: 0;
   padding: 0;
+  height: 200vh;
 }
 .nav{
   height: 70px;
@@ -9,6 +15,7 @@ body{
   backdrop-filter: blur(6px);
   position: fixed;
   top: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .img-box{
   height: 70px;
@@ -16,4 +23,30 @@ body{
 }
 .img-box img{
   height: 100%;width: 100%;
+}
+.myani{
+animation: aniimg 1s ;  
+  
+}
+@keyframes aniimg{
+  0%{transform: rotateZ(0deg)}
+  100%{transform: rotateZ(360deg)}
+}
+.loginbtnbox{
+  position: absolute;
+  right: 20px;
+  top: 13px;
+}
+.btn{
+  background-color: #4680ff;
+ color: #fff;
+ border: none;
+ border-radius: 5px;
+ height: 40px;
+ width: auto;
+ padding-left: 30px;
+ padding-right: 30px;
+ font-family: font1;
+ cursor: pointer;
+ font-size: 18px;
 }
