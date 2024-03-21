@@ -85,6 +85,20 @@ a:active{
     float: right;
 
 }
+.app{
+  color: #fff;
+  background-color:#000000;
+  border: 1px solid #4680ff;
+  width: 300px;
+  border-radius: 10px;
+}
+.appicon{
+ font-size: 50px;
+ color: white;
+}
+
+
+
 @media only screen and (max-width: 600px) {
    .paragraph {
      width: 100%;
