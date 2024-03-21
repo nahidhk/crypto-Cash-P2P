@@ -6,7 +6,7 @@ body{
   font-family: font1;
   margin: 0;
   padding: 0;
-  height: 200vh;
+
 }
 .nav{
   height: 70px;
@@ -69,3 +69,33 @@ a:active{
   border-left: 5px solid #059CFF;
   background-color: #F1F1F1;
 }
+.vdio{
+  height: 200px;
+  width: 300px;
+  border: 1px solid #4680ff;
+  border-radius: 10px;
+  
+}
+.paragraph{
+  width: 50%;
+  float: left;
+}
+.video{
+  width: 50%;
+    float: right;
+
+}
+@media only screen and (max-width: 600px) {
+   .paragraph {
+     width: 100%;
+     float: none;
+   }
+   
+   .video {
+     width: 100%;
+     float: none;
+   
+   } 
+
+}
+

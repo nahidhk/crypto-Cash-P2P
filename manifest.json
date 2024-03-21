@@ -1,0 +1,15 @@
+{
+    "name": "Crypto Cash P2P",
+    "short_name": "Crypto Cash P2P",
+    "icons": [
+      {
+        "src": "img/lite.jpg",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#fff"
+  }
