@@ -58,6 +58,9 @@ a:active{
     text-decoration-style: solid;
 
 }
+.bagal{
+  height: 350px;
+}
 .btn:hover{
   background-color: #42445A00;
   color: #4680ff;
@@ -77,13 +80,12 @@ a:active{
   
 }
 .paragraph{
-  width: 50%;
-  float: left;
+  width: 48%;
+float: left;
 }
 .video{
-  width: 50%;
-    float: right;
-
+  width: 48%;
+float: right;
 }
 .app{
   color: #fff;
@@ -91,13 +93,28 @@ a:active{
   border: 1px solid #4680ff;
   width: 300px;
   border-radius: 10px;
+ 
 }
 .appicon{
  font-size: 50px;
  color: white;
 }
-
-
+.appbox{
+  width: 100%;
+}
+.myf{
+  background-color: #FFFFFF;
+  color: #007BFF;
+  
+}
+.git{
+  font-size: 33px;
+  margin: 30px;
+}
+.link{
+  margin:30px;
+  padding: 10px;
+}
 
 @media only screen and (max-width: 600px) {
    .paragraph {
@@ -110,6 +127,9 @@ a:active{
      float: none;
    
    } 
+   .bagal{
+     height: auto;
+   }
 
 }
 
