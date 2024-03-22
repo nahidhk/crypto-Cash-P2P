@@ -50,10 +50,10 @@ window.addEventListener('load', () => {
 });
 
 function login(){
-  window.location.href="/user"
+  window.location.href="user"
 }
 
 
 function singup(){
-  window.location.href="/user/singup.html"
+  window.location.href="user/singup.html"
 }

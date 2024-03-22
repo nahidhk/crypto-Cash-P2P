@@ -7,7 +7,8 @@ $password = $_POST['password'];
 $newData = array(
   'username' => $username,
   'mobile' => $mobile,
-  'email' => $email
+  'email' => $email,
+  'password' => $password
     );
 
 // পাসওয়ার্ড নামে JSON ফাইল তৈরি করা
