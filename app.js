@@ -53,3 +53,7 @@ function login(){
   window.location.href="/user"
 }
 
+
+function singup(){
+  window.location.href="/user/singup.html"
+}
