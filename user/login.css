@@ -1,0 +1,30 @@
+.popup{
+  height: auto;
+  width: 320px;
+  top: 40%;
+  left: 50%;
+  background-color: #DBDEFF;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  border-radius: 7px;
+}
+.input{
+  
+  height: 36px;
+  border: 1px solid #4680ff;
+}
+.input{
+  text-align: center;
+  height: 40px;
+  width: 230px;
+  background-color: #DBDEFF00;
+ font-family: font1;
+  outline: none;
+  color: #4680ff;
+  border: 1px solid #4680ff;
+}
+.icon{
+  font-size: 25px;
+  padding: 5px;
+  color: #4680ff;
+}

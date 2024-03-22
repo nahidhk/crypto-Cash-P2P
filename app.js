@@ -48,3 +48,8 @@ window.addEventListener('load', () => {
     addToHomeBtn.style.display = 'block';
   });
 });
+
+function login(){
+  window.location.href="/user"
+}
+
