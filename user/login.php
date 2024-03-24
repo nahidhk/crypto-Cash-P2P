@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // লগইন সফল হলে ব্যবহারকারীকে ড্যাশবোর্ডে পাঠানো
      header("Location: dashboard.php?password=" . urlencode($email));
     } else {
-       echo "<script>window.open('errorlog.html','_self')</script>";
+       echo "errors login";
     }
 }
 ?>
