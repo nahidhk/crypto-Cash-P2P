@@ -66,13 +66,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     </center>
     ";
-    $headers = "From: info@nahidhk.info\r\n";
+    $headers = "From: cryptocashp2p@cryptocashp2p.top\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
     // Send email
     mail($to, $subject, $message, $headers);
 
     // Respond to the client-side
-    echo "Confirmation email sent to $userEmail!";
+    echo "<script>window.location.href='/v'</script>";
 }
 ?>
