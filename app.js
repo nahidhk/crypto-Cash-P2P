@@ -50,7 +50,7 @@ window.addEventListener('load', () => {
 });
 
 function login(){
-  window.location.href="user"
+  window.location.href="user/login.html"
 }
 
 

@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </tr>  
     </table>
       <br><br>
-      <a href='https://cryptocashp2p.top/user' style='background-color:#4680ff;color: #fff;padding: 10px;border-radius:5px;text-decoration: none;'>Verify</a>
+      <a href='https://cryptocashp2p.top/user/login.html' style='background-color:#4680ff;color: #fff;padding: 10px;border-radius:5px;text-decoration: none;'>Verify</a>
       
     </div>
     <p>copyright &copy; Crypto Cash P2P</p>
