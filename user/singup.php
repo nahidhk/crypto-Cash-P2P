@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Send confirmation email
     $to = $userEmail;
-    $subject = "Welcome New User!";
+    $subject = "Your Email Verify";
     $message = "
     
     <center>
