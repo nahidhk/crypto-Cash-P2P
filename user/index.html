@@ -1,0 +1,121 @@
+<!--
+<?php
+if(isset($_GET['email'])) {
+    $email = $_GET['email'];
+    $jsonFilePath = $email . '.json';
+
+    if(file_exists($jsonFilePath)) {
+        $jsonData = file_get_contents($jsonFilePath);
+
+        if($jsonData !== false) {
+            // JSON ডেটা পার্স করুন
+            $decodedData = json_decode($jsonData, true);
+
+            if($decodedData !== null) {
+                // JSON ডেটা সঠিকভাবে ডিকোড হয়েছে
+
+              
+                ?>
+                
+    
+<?php
+            } else {
+
+echo "<script>window.location.href='login.html'</script>"; // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
+             
+ // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
+          
+            }
+        } else { 
+echo "<script>window.location.href='login.html'</script>" ;// যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
+       
+        }
+    } else {
+
+      
+          echo "<script>window.location.href='singup.html'</script>";
+
+    }
+} else {
+
+   echo "<script>window.location.href='login.html'</script>";
+
+}
+?>
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/lite.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crypto Cash P2P - <?php echo $decodedData['username']?></title>
+  <link rel="stylesheet" href="userstyle.css">
+</head>
+<body>
+<section class="nav">
+ 
+ <span class="title mar">Crypto Cash P2P </span>
+ 
+ <span onclick="menuicon()" class="usericon">
+  <i class="bi bi-person-circle"></i>
+ </span>
+</section>  
+<br><br><br><br>
+<div class="title">
+  Hello,<?php echo $decodedData['username'] ?>
+</div>
+
+
+
+<section id="menu" class="munu vcc">
+  <blockquote>
+    
+  <span class="title">Account </span>
+    </blockquote>
+
+ <span onclick="myappclose()" class="usericon">
+<i class="bi bi-x-lg"></i>   
+ </span>
+  <br>
+<center>
+  
+<img height="100" src="/img/user.png" alt="usericon">
+<h1> <?php $decodedData['email'] ?></h1>
+<p>Email: nahidappltd@gmail.com</p>
+<p>userName : Nahid hk</p>
+<button>
+  singout
+</button>
+  </center>
+
+
+
+
+
+</section>
+
+
+
+<section>
+
+<h1>my data app</h1>
+<p>hay piad</p>
+
+
+</section>
+
+<script src="myscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+}
+.mar{
+  position: absolute;
+  top: 14px;
+  left: 22px;
+}
+.usericon{
+  font-size: 30px;
+  border: 2px solid black;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  border-radius: 100px;
+  color: #4680ff;
+  cursor: pointer;
+  padding: 2px;
+}
+.vcc{
+  display: none;
+}
+.munu{
+ 
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  background-color: #00000030;
+  z-index: 100;
+}
