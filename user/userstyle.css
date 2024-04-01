@@ -30,3 +30,20 @@ body{
   background-color: #00000030;
   z-index: 100;
 }
+.lopag{
+  height: 30px;
+  width: 300px;  
+}
+.popup{
+height: auto;
+width: 300px;
+border-radius: 7px;
+background-color: #0000003b;
+backdrop-filter: blur(10px);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+text-align: center;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}

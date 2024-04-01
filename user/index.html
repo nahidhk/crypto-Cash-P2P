@@ -49,7 +49,7 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+  <link rel="manifest" href="/manifest.json">
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -92,10 +92,9 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
 <center>
   
 <img height="100" src="/img/user.png" alt="usericon">
-<h1> <?php $decodedData['email'] ?></h1>
-<p>Email: nahidappltd@gmail.com</p>
-<p>userName : Nahid hk</p>
-<button>
+<h1> <?php $decodedData['username'] ?></h1>
+<p>Email: <?php $decodedData['email'] ?></p>
+<button onclick="logout()" class="lopag">
   singout
 </button>
   </center>
@@ -107,7 +106,6 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
 </section>
 
 
-
 <section>
 
 <h1>my data app</h1>
@@ -117,5 +115,6 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
 </section>
 
 <script src="myscript.js"></script>
+<script src="login.js"></script>
 </body>
 </html>

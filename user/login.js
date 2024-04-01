@@ -17,3 +17,10 @@ localStorage.setItem("password",password);
 
 email.value = emaildata;
 password.value = passdata;
+
+function logout(){
+  alert("  If you log out, all your data will be removed from the local server and you will be logged in again.Hope you understand what we mean.");
+  window.location.href="/index.html";
+  localStorage.removeItem("email");
+  localStorage.removeItem("password");
+}
