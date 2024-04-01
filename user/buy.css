@@ -31,3 +31,19 @@ border: 2px solid rgb(29, 193, 100);
     color: white;
     background-color: rgb(220, 26, 116);
 }
+.price-box{
+    width:auto;height:auto;background-color: #4680ff; 
+}
+.contxt{
+    font-size: 25px; background-color:#fff ; color: #000000;padding: 5px;border-bottom-left-radius:14px ;border-bottom-right-radius:14px ; 
+}
+.showtxt{
+    font-size: 30px;color:#fff
+}
+table{
+    border: 1px solid #4680ff;
+    width: 300px;
+}
+tr,td,th{
+    border: 1px solid red;
+}

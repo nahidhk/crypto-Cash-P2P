@@ -106,27 +106,95 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
 <section>
   <center>
     <div class="btn-box">
-      <button class="btnn btn1 active1 ">Buy</button>
-      <button class="btnn btn2 active2">Sell</button>
+      <button onclick="sell()" class="btnn btn2 active2">Sell</button>
+      <button onclick="buy()" class="btnn btn1 active1 ">Buy</button>
+      
     </div>
+
 </center>
 
 </section>
 
 
-
-<section>
+<!-- The buy opstion -->
+<section class="vcc" id="buy">
   <blockquote>
     <h2>
      The Crypto Buy<hr>
     </h2>
 
  <center>
-  <span style="font-size: 30px; background-color: rgb(0, 75, 250); color: #fff;">Today Crypto Buy Price is</span><br>
-  <span style="font-size: 30px;">1USD > 120BDT</span>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla tenetur cumque iste perspiciatis eum quas quisquam, minus voluptates pariatur impedit atque at in deserunt architecto dolores corrupti ex recusandae porro obcaecati dolor eos corporis. Facilis, consequuntur ducimus expedita inventore a asperiores molestias facere, nostrum provident rem veniam accusantium eaque! Quas?
+  </p>
+  <div class="price-box">
+  <span class="contxt">Today Crypto Buy Price </span><br><br>
+ 
+  <span class="showtxt" >1USDT > <span id="buyprice"></span>BDT</span>
+  <br><br>
+</div>
+<br><br>
+<p>You have buy munuman 1 usdt </p>
+<button class="btn">Buy Now</button>
+<br><br><br>
+
  </center>
   </blockquote>
 </section>
+
+
+<!-- sell crytpo -->
+
+<section id="sell">
+  <blockquote>
+    <h2>
+     The Crypto sell<hr>
+    </h2>
+
+ <center>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla tenetur cumque iste perspiciatis eum quas quisquam, minus voluptates pariatur impedit atque at in deserunt architecto dolores corrupti ex recusandae porro obcaecati dolor eos corporis. Facilis, consequuntur ducimus expedita inventore a asperiores molestias facere, nostrum provident rem veniam accusantium eaque! Quas?
+  </p>
+  <div class="price-box">
+  <span class="contxt">Today Crypto sell Price </span><br><br>
+ 
+  <span class="showtxt" >1USDT > <span id="sellprice"></span>BDT</span>
+  <br><br>
+</div>
+<br><br>
+<p>You have sell munuman 1 usdt </p>
+<button class="btn">sell Now</button>
+<br><br><br>
+<table>
+<tr>
+  <th>Sell</th>
+  <th>pre $ fees</th>
+  <th>fees</th>
+  <th>limet</th>
+</tr>
+<tr>
+  <td>100$</td>
+  <td>0.01$</td>
+  <td>1$</td>
+  <td>150$</td>
+</tr>
+<tr>
+  <td>200$</td>
+  <td>0.03$</td>
+  <td>6$</td>
+  <td>250$</td>
+</tr>
+<tr>
+  <td>500$</td>
+  <td>0.04$</td>
+  <td>20$</td>
+  <td>1000$</td>
+</tr>
+</table>
+ </center>
+  </blockquote>
+</section>
+
 
 <script src="myscript.js"></script>
 <script src="login.js"></script>
