@@ -38,8 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return response.json();
         })
         .then(data => {
-            console.log(data);
-            // Assuming data is an array with a single object containing "buy" and "sell" properties
+            console.log(data);           
             const item = data[0];
             document.getElementById("sellprice").innerText = item.sell;
             document.getElementById("buyprice").innerText = item.buy;
