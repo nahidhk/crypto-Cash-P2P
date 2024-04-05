@@ -1,5 +1,5 @@
 console.log("apps");
-let price = JSON.parse('{"sell":"120","buy":"125"}');
+//let price = JSON.parse('{"sell":"120","buy":"125"}');
 function menuicon(){
  document.getElementById("menu").classList="munu animate__animated animate__fadeInRight";
 }
@@ -7,18 +7,44 @@ function myappclose(){
  document.getElementById("menu").classList="munu animate__animated animate__fadeOutRight"; 
 }
 function local1(){
-document.getElementById("buyprice").innerText=price.buy;
+
 }
 local1();
 function sell(){
     document.getElementById("sell").style.display="block";
     document.getElementById("buy").style.display="none";
+    document.getElementById("sellbtn").classList=" btnn btn2 active2";
+    document.getElementById("buybtn").classList="btnn btn1";
 }
 function buy(){
     document.getElementById("sell").style.display="none";
     document.getElementById("buy").style.display="block";
+    document.getElementById("sellbtn").classList="btnn btn2";
+    document.getElementById("buybtn").classList="btnn btn1 active1";
 }
 function sellprice(){
-    document.getElementById("sellprice").innerText=price.sell;
+    
 }
 sellprice();
+
+document.addEventListener('DOMContentLoaded', function () {
+    const url = 'pricelist.json';
+
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+            // Assuming data is an array with a single object containing "buy" and "sell" properties
+            const item = data[0];
+            document.getElementById("sellprice").innerText = item.sell;
+            document.getElementById("buyprice").innerText = item.buy;
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+});
