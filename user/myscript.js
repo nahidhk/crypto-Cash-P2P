@@ -47,3 +47,24 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('There was a problem with the fetch operation:', error);
         });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    let ipdata = 'ip.json'
+
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);           
+            const item = data[0];
+             // its my work
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+});
