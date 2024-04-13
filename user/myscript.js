@@ -1,4 +1,4 @@
-console.log("apps");
+console.log("This is a myscript");
 //let price = JSON.parse('{"sell":"120","buy":"125"}');
 function menuicon(){
  document.getElementById("menu").classList="munu animate__animated animate__fadeInRight";
@@ -48,23 +48,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 });
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    let ipdata = 'ip.json'
-
-    fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log(data);           
-            const item = data[0];
-             // its my work
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        });
-});
