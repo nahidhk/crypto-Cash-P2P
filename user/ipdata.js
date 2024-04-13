@@ -31,9 +31,3 @@ function xpdataip(){
         });
 };
 
-
-
-
-
-
-

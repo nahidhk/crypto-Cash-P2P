@@ -1,4 +1,4 @@
-<!--
+
 <?php
 if(isset($_GET['email'])) {
     $email = $_GET['email'];
@@ -43,7 +43,7 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
 }
 ?>
 
--->
+
 
 
 <!DOCTYPE html>
@@ -93,8 +93,8 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
 <center>
   
 <img height="100" src="/img/user.png" alt="usericon">
-<h1> <?php $decodedData['username'] ?></h1>
-<p>Email: <?php $decodedData['email'] ?></p>
+<h1> <?php echo $decodedData['username'] ?></h1>
+<p>Email: <?php echo $decodedData['email'] ?></p>
 <button onclick="logout()" class="lopag">
   singout
 </button>
