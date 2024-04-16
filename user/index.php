@@ -74,9 +74,11 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
  </span>
 </section>  
 <br><br><br><br>
-<marquee>
-  hello
+<center>
+<marquee class="marquee">
+  <span id="userview"></span>
 </marquee>
+</center>
 <div class="title">
   Hello,<?php echo $decodedData['username'] ?>
 </div>
@@ -183,14 +185,26 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
 <button class="btn">sell Now</button>
 <br><br><br>
 <div class="popup">
-  <h2 style="color: #0400ff;">Pyment Mathoad</h2>
+  <h2 style="color: #0400ff;"> Sell Mathoad </h2>
   <hr>
   <blockquote>
     <form action="#" method="$_POST">
-<!-- my appp data -->
+      <!-- the system opstion -->
+       <label class="lable" for="pyment">Pyment</label><n>*</n><br>
+       <select class="input" name="pyment">
+            <option value="sell">Sell</option>
+       </select>
+<!-- add the metho  -->
+
+
+
+
+
+
     </form>
   </blockquote>
 </div>
+
 <table>
 <tr>
   <th>Sell</th>
@@ -221,6 +235,7 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
   </blockquote>
 </section>
 
+<script src="manuser.js"></script>
 <script src="myscript.js"></script>
 <script src="login.js"></script>
 <script src="ipdata.js"></script>
