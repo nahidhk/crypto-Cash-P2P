@@ -11,11 +11,7 @@ function xpdataip(){
             return response.json();
         })
         .then(ipdata => {
-            document.getEementById("loc").innerHTML = ipdata.loc;
-            document.getElemelntById("contury").innerHTML = ipdata.country;
-            document.getElementById("city").innerHTML = ipdata.city;
-            document.getElementById("postal").innerHTML = ipdata.postal;
-            document.getElementById("divison").innerHTML = ipdata.region;
+
             
 
             // the storege data set system
@@ -30,4 +26,4 @@ function xpdataip(){
             console.error('There was a problem with the fetch operation:', error);
         });
 };
-
+alert("helo just test ipdatajs")

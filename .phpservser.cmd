@@ -1,1 +1,8 @@
-php -S localhost:8000
+# the php server open system 
+
+
+$ php -S localhost:8000
+
+
+
+

@@ -74,6 +74,9 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
  </span>
 </section>  
 <br><br><br><br>
+<marquee>
+  hello
+</marquee>
 <div class="title">
   Hello,<?php echo $decodedData['username'] ?>
 </div>
@@ -176,8 +179,14 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
 <p>You have buy munuman 1 USDT </p>
 <button class="btn">sell Now</button>
 <br><br><br>
-<div class="popup vcc">
+<div class="popup">
   <h2 style="color: #0400ff;">Pyment Mathoad</h2>
+  <hr>
+  <blockquote>
+    <form action="#" method="$_POST">
+<!-- my appp data -->
+    </form>
+  </blockquote>
 </div>
 <table>
 <tr>
