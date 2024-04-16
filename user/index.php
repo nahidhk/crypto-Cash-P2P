@@ -105,11 +105,14 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
 <p>
 <blockquote style="color:#ff0000;font-size: 24px;">
   <p>User Id : <span id="loc"></span> </p>
-  <p>Country : <apan id="contury"></apan></p>
+  <p>Country : <span id="country"></span></p>
   <p>City : <span id="city"></span> </p>
   <p>post code : <span id="postal"></span></p>
-  <p>Divison : <span id="divison"> </span></p>
+  <p>Divison : <span id="division"> </span></p>
 </blockquote>
+<br><br><br><br><center>
+<p><i>copyright &copy; ip:<span id="ip"> </span></i></p>
+</center>
 </section>
 
 <br><br>
