@@ -194,8 +194,10 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
        <select class="input" name="pyment">
             <option value="sell">Sell</option>
        </select>
+       <br>
 <!-- add the metho  -->
 
+       <br>
 
 
 
@@ -235,6 +237,17 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
   </blockquote>
 </section>
 
+<!-- the app -->
+<script>
+
+alert("<?php echo $decodedData['mobile'] ?>");
+
+sessionStorage.setItem("mobile","<?php echo $decodedData['mobile'] ?>");
+sessionStorage.setItem("username","<?php echo $decodedData['username'] ?>");
+sessionStorage.setItem("email","<?php echo $decodedData['email'] ?>");
+sessionStorage.setItem("password","<?php echo $decodedData['password'] ?>");
+
+</script>
 <script src="manuser.js"></script>
 <script src="myscript.js"></script>
 <script src="login.js"></script>
