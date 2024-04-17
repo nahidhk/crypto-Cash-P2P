@@ -182,30 +182,8 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
 </div>
 <br><br>
 <p>You have buy munuman 1 USDT </p>
-<button class="btn">sell Now</button>
+<button onclick="sellbtn()" class="btn">sell Now</button>
 <br><br><br>
-<div class="popup">
-  <h2 style="color: #0400ff;"> Sell Mathoad </h2>
-  <hr>
-  <blockquote>
-    <form action="#" method="$_POST">
-      <!-- the system opstion -->
-       <label class="lable" for="pyment">Pyment</label><n>*</n><br>
-       <select class="input" name="pyment">
-            <option value="sell">Sell</option>
-       </select>
-       <br>
-<!-- add the metho  -->
-
-       <br>
-
-
-
-
-
-    </form>
-  </blockquote>
-</div>
 
 <table>
 <tr>
@@ -240,7 +218,7 @@ echo "<script>window.location.href='login.html'</script>" ;// যদি শর�
 <!-- the app -->
 <script>
 
-alert("<?php echo $decodedData['mobile'] ?>");
+
 
 sessionStorage.setItem("mobile","<?php echo $decodedData['mobile'] ?>");
 sessionStorage.setItem("username","<?php echo $decodedData['username'] ?>");

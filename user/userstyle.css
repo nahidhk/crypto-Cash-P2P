@@ -73,3 +73,34 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
   color: #4680ff;
 }
 n{color: red;}
+.lock-box{
+  display: flex;
+  justify-content: space-evenly;
+}
+.numberlock{
+
+padding: 8px;
+  width: 12px;
+  height: 16px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  padding-left: 13px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  
+}
+
+.n-no_active{
+border: 1px solid  rgb(13, 255, 0);
+color:  rgb(13, 255, 0);
+}
+.a-active{
+  color: #fff;
+  background-color: rgb(13, 255, 0);
+}
+
+
+
