@@ -1,28 +1,105 @@
-
-
 var loaduserid = sessionStorage.getItem("userid");
-document.getElementById("useriddata").value=loaduserid;
+document.getElementById("useriddata").value = loaduserid;
 
+var loademail = sessionStorage.getItem("email");
+document.getElementById("emaildatashow").value = loademail;
 
-var loademail= sessionStorage.getItem("email");
-document.getElementById("emaildatashow").value=loademail;
+var loadmobile = sessionStorage.getItem("mobile");
+document.getElementById("phonedatashow").value = loadmobile;
 
-var loadmobile = sessionStorage.getItem("mobile")
-document.getElementById("phonedatashow").value=loadmobile ;
-
-function mobiledatatest(){
-var mobiletext = document.getElementById("phonedatashow").value;
-    if (mobiletext == loadmobile) {
-        
-    } else {
-        document.getElementById("phonedatashow").value=loadmobile ;
-        alert("Sorry you cannot change mobile number.")  
-    }
+function mobiledatatest() {
+  var mobiletext = document.getElementById("phonedatashow").value;
+  if (mobiletext == loadmobile) {
+  } else {
+    document.getElementById("phonedatashow").value = loadmobile;
+    alert("Sorry you cannot change mobile number.");
+  }
 }
 
-
 function number1() {
-    
- document.getElementById("number1").classList="animate__bounceOutLeft animate__animated vcc"
- document.getElementById("number2").classList="animate__bounceInRight animate__animated"
+  document.getElementById("number1").classList =
+    "animate__bounceOutLeft animate__animated vcc";
+  document.getElementById("number2").classList =
+    "animate__bounceInRight animate__animated";
+  document.getElementById("set1").classList = "numberlock a-active";
+}
+
+/// the boss
+var loadbkashdata = localStorage.getItem("bkash");
+var loadnagaddata = localStorage.getItem("nagad");
+
+function addmethod() {
+  var mymathoad = document.getElementById("method").value;
+  var accountnumber = document.getElementById("account");
+
+  if (mymathoad == "bkash") {
+    accountnumber.value = loadbkashdata;
+  } else {
+  }
+
+  if (mymathoad == "nagad") {
+    accountnumber.value = loadnagaddata;
+  } else {
+  }
+
+  if (mymathoad == "rocket") {
+    accountnumber.value = "Sorry our Rocket service is not launched.";
+  } else {
+  }
+
+  if (mymathoad == "upay") {
+    accountnumber.value = "Sorry our Upay service is not launched.";
+  } else {
+  }
+}
+
+function number2() {
+  var setmymathoad = document.getElementById("method").value;
+  var setaccountnumber = document.getElementById("account").value;
+  localStorage.setItem(setmymathoad, setaccountnumber);
+
+  document.getElementById("number2").classList =
+    "animate__bounceOutLeft animate__animated vcc";
+  document.getElementById("number3").classList =
+    "animate__bounceInRight animate__animated";
+  document.getElementById("set2").classList = "numberlock a-active";
+}
+
+// None of these are for fun. It is built with a very open language. May not go as depressed or other system system. It uses only calculation system. Please use the guitar. Cannot attempt to customer.
+
+var sellload = parseFloat(sessionStorage.getItem("sell"));
+var buy = parseFloat(sessionStorage.getItem("buy"));
+
+function usdok() {
+  var usdx = parseFloat(document.getElementById("usdamount").value);
+  var allusd = usdx * sellload;
+  document.getElementById("bdtamount").value = allusd;
+  sessionStorage.setItem("usd", allusd);
+  var fee = usdx * 0.02;
+  var feebdtsll = fee * sellload;
+  var feebdtsllTotal = allusd - feebdtsll;
+  document.getElementById("fee").value = fee.toFixed(2) + " USD";
+  document.getElementById("rbdt").value = feebdtsllTotal.toFixed(2) + "BDT";
+}
+
+function bdtok() {
+  var bdty = parseFloat(document.getElementById("bdtamount").value);
+  var allbdt = bdty / sellload;
+  document.getElementById("usdamount").value = allbdt.toFixed(2);
+  sessionStorage.setItem("usd", allbdt);
+  var fee = allbdt * 0.02;
+  var myrecev = fee * sellload;
+  var opto = bdty - myrecev;
+  document.getElementById("fee").value = fee.toFixed(2);
+  document.getElementById("rbdt").value = opto.toFixed(2);
+}
+
+function number3() {
+  var datausd = sessionStorage.getItem("usd");
+  document.getElementById("usd").innerHTML = datausd;
+  document.getElementById("number3").classList =
+    "animate__bounceOutLeft animate__animated vcc";
+  document.getElementById("number4").classList =
+    "animate__bounceInRight animate__animated";
+  document.getElementById("set3").classList = "numberlock a-active";
 }

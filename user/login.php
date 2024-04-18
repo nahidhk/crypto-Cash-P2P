@@ -25,9 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($loggedIn) {
         // লগইন সফল হলে ব্যবহারকারীকে ড্যাশবোর্ডে পাঠানো
-     header("Location: index.php?email=" . urlencode($email));
+        header("Location: index.php?email=" . urlencode($email));
     } else {
-       echo "<script>window.location.href='dontmach.html'</script>";
+        echo "<script>window.location.href='dontmach.html'</script>";
     }
 }
-?>

@@ -1,12 +1,12 @@
-body{
+body {
   margin: 0;
 }
-.mar{
+.mar {
   position: absolute;
   top: 14px;
   left: 22px;
 }
-.usericon{
+.usericon {
   font-size: 30px;
   border: 2px solid black;
   position: absolute;
@@ -16,13 +16,16 @@ body{
   color: #4680ff;
   cursor: pointer;
   padding: 2px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
 }
-.vcc{
+.vcc {
   display: none;
 }
 
-.munu{
- 
+.munu {
   height: 100vh;
   width: 100%;
   backdrop-filter: blur(10px);
@@ -31,24 +34,26 @@ body{
   background-color: #fffffff1;
   z-index: 100;
 }
-.lopag{
+.lopag {
   height: 30px;
-  width: 300px;  
+  width: 300px;
 }
-.popup{
-height: auto;
-width: 300px;
-border-radius: 7px;
-background-color: #ffffffcc;
-backdrop-filter: blur(10px);
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50% , -50%);
-text-align: center;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+.popup {
+  height: auto;
+  width: 300px;
+  border-radius: 7px;
+  background-color: #ffffffcc;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.marquee{
+.marquee {
   color: #505050;
   padding: 10px;
   width: 95%;
@@ -61,7 +66,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
   -o-border-radius: 7px;
 }
 
-.input{
+.input {
   height: 40px;
   width: 95%;
   margin: 10px;
@@ -71,18 +76,19 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
   text-align: center;
   background-color: #00000000;
 }
-.lable{
+.lable {
   color: #4680ff;
 }
-n{color: red;}
-.lock-box{
+n {
+  color: red;
+}
+.lock-box {
   display: flex;
   justify-content: space-evenly;
   width: 50%;
 }
-.numberlock{
-
-padding: 8px;
+.numberlock {
+  padding: 8px;
   width: 12px;
   height: 16px;
   border-radius: 100px;
@@ -93,18 +99,17 @@ padding: 8px;
   padding-left: 13px;
   padding-top: 6px;
   padding-bottom: 10px;
-  
 }
 
-.n-no_active{
-border: 1px solid  rgb(13, 255, 0);
-color:  rgb(13, 255, 0);
+.n-no_active {
+  border: 1px solid rgb(13, 255, 0);
+  color: rgb(13, 255, 0);
 }
-.a-active{
+.a-active {
   color: #000000;
   background-color: rgb(13, 255, 0);
 }
-.topstar{
+.topstar {
   width: 50%;
   padding: 30px;
   border-radius: 5px;
@@ -114,7 +119,7 @@ color:  rgb(13, 255, 0);
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.nextbtn{
+.nextbtn {
   height: 20px;
   padding: 10px;
   width: 200px;
@@ -128,10 +133,9 @@ color:  rgb(13, 255, 0);
   -o-border-radius: 6px;
 }
 
-
 /* ================================== css mobile ================== */
 @media only screen and (max-width: 600px) {
-  .topstar{
+  .topstar {
     width: 95%;
     padding: 10px;
     border-radius: 5px;
@@ -141,7 +145,7 @@ color:  rgb(13, 255, 0);
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
   }
-  .lock-box{
+  .lock-box {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
