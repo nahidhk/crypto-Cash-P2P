@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
   <link rel="stylesheet" href="buy.css">
   <link rel="manifest" href="/manifest.json">
   <link
@@ -26,12 +31,51 @@
 
   </span>
  </section><br><br<br><br><br><br><br><br><br>
+ <center>
   <section class="lock-box">
    <div class="numberlock a-active">1</div>
    <div class="numberlock n-no_active">2</div>
    <div class="numberlock n-no_active">3</div>
+  </section>
+  <br/><br/>
+  <section class="topstar">
 
+<form action="#" method="POST">
+<div id="number1">
  
+<h1>Basic Method</h1>
+ <label class="label" for="pyment">Option: <n>*</n></label><br>
+ <select class="input" name="pyment" id="pyment">
+<option value="sell">Sell</option>
+ </select><br>
+ <label class="label" for="userid">UserID: <n>*</n></label><br>
+ <input class="input" type="text" name="userid" id="useriddata" ><br>
+
+ <label class="label" for="email">Email: <n>*</n></label><br>
+ <input class="input" type="email" name="email" id="emaildatashow" ><br>
+
+ <label class="label" for="phone"> Phone Number: <n>*</n></label><br>
+ <input oninput="mobiledatatest()" class="input" type="text" name="phone" id="phonedatashow" ><br>
+ 
+ <div onclick="number1()" class="nextbtn">Next >></div>
+
+</div>
+
+
+
+<div class="vcc" id="number2">
+  <h1>Pyment Method</h1>
+  <label class="label" for="method">Method: <n>*</n></label><br>
+  <select class="input" name="method" id="method">
+ <option value="bkash">Bkash</option>
+ <option value="nagad">Nagad</option>
+ <option value="rocket">Rocket</option>
+ <option value="upay">Upay</option>
+  </select><br>
+  <label class="label" for="account">Account Number: <n>*</n></label><br>
+  <input class="input" type="text" name="account" id="account" ><br>
+
+  
 
 
 
@@ -39,6 +83,16 @@
 
 
 
+
+
+
+</div>
+
+
+</form>
+</section>
+</center>
+<script src="buysell.js"></script>
  <script src="manuser.js"></script>
  <script src="myscript.js"></script>
  <script src="login.js"></script>
