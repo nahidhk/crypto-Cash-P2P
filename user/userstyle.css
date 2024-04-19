@@ -132,6 +132,14 @@ n {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
 }
+.copy{
+  color: #ff0066;
+  padding: 10px;
+  border: 1px dotted #ff0066;
+  border-radius: 9px;
+}
+
+
 
 /* ================================== css mobile ================== */
 @media only screen and (max-width: 600px) {

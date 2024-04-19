@@ -74,7 +74,7 @@ function usdok() {
   var usdx = parseFloat(document.getElementById("usdamount").value);
   var allusd = usdx * sellload;
   document.getElementById("bdtamount").value = allusd;
-  sessionStorage.setItem("usd", allusd);
+  sessionStorage.setItem("usd", usdx);
   var fee = usdx * 0.02;
   var feebdtsll = fee * sellload;
   var feebdtsllTotal = allusd - feebdtsll;
@@ -103,3 +103,54 @@ function number3() {
     "animate__bounceInRight animate__animated";
   document.getElementById("set3").classList = "numberlock a-active";
 }
+
+function tokenchk(){
+  var tokok = document.getElementById("tokenopstion").value;
+
+
+ 
+  if (tokok == "bpi") {
+    document.getElementById('copy').value="1";
+    document.getElementById("vic").style.display="block";
+  } else {
+    
+  }
+
+  if (tokok == "bep20") {
+    document.getElementById('copy').value="2";
+    document.getElementById("vic").style.display="block";
+  } else {
+    
+  }
+
+  if (tokok == "trc20") {
+    document.getElementById('copy').value="3";
+    document.getElementById("vic").style.display="block";
+  } else {
+   
+  }
+
+
+}
+
+function copytext(){
+  // Get the text field
+  var copyText = document.getElementById("copy");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+
+}
+
+function transaction(){
+  document.getElementById("er").style.display="block";
+  alert("ok")
+}
+
+

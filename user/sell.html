@@ -109,14 +109,29 @@
           </div>
           <div class="vcc" id="number4">
             <h1>Pay NOW</h1>
-            <p>You need to pay $<span id="usd"></span> USD</p>
+            <p>You need to pay $<span style="color: #4680ff;" id="usd"></span> USD</p>
+            <br>
+            <label for="tokenname" class="lebel">Tokenname: <n>*</n></label>
+            <select onchange="tokenchk()" name="tokenname" id="tokenopstion" class="input" required>
+              <option disabled selected>---- select -----</option>
+              <option value="bpi">Binance Pay ID</option>
+              <option value="bep20">(BEP 20) USDT</option>
+              <option value="trc20">(TRC 20) USDT</option>
+
+            </select>
+            <label for="address" class="label"></label>
+<input name="address" type="text" id="copy" class="input">
+<div id="vic" class="vcc" style="background-color: rgb(225, 225, 225);width: 100px;border-radius: 10px;padding: 10px;cursor: pointer;" onclick="copytext()">copy</div>
+
+<label for="transaction" class="label">Transaction ID: <n>*</n></label>
+<input oninput="transaction()" name="transaction" type="text" id="transaction" class="input">
 
 
-
-            <div onclick="number4()" class="nextbtn">Conforim >></div>
+            <input id="er" style="background-color: #4680ff;" type="submit" onclick="number4()" value="Conforim >>"
+              class="input vcc">
           </div>
 
-
+          
 
         </form>
       </section>
