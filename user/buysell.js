@@ -148,9 +148,12 @@ function copytext(){
 
 }
 
-function transaction(){
+function trans(){
   document.getElementById("er").style.display="block";
-  alert("ok")
+  document.getElementById("set4").classList = "numberlock a-active";
 }
 
-
+var username = sessionStorage.getItem("username");
+var city = sessionStorage.getItem("city");
+document.getElementById("name").innerHTML=username;
+document.getElementById("jela").innerHTML=city;

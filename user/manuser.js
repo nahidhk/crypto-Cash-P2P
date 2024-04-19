@@ -7,5 +7,5 @@ brk.innerHTML= text;
 
 
 function sellbtn(){
-    window.location.href="sell.html"
+    window.location.href="sell.asp"
 }

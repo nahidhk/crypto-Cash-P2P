@@ -20,23 +20,23 @@ if (isset($_GET['email'])) {
 <?php
       } else {
 
-        echo "<script>window.location.href='login.html'</script>"; // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
+        echo "<script>window.location.href='login.asp'</script>"; // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
 
         // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
 
       }
     } else {
-      echo "<script>window.location.href='login.html'</script>"; // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
+      echo "<script>window.location.href='login.asp'</script>"; // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
 
     }
   } else {
 
 
-    echo "<script>window.location.href='singup.html'</script>";
+    echo "<script>window.location.href='singup.asp'</script>";
   }
 } else {
 
-  echo "<script>window.location.href='login.html'</script>";
+  echo "<script>window.location.href='login.asp'</script>";
 }
 ?>
 

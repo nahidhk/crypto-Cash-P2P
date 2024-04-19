@@ -41,7 +41,7 @@
  Enter Your Phone Number:   
  Enter Your username :  
  Enter Your Post Code :  
- '>Forget Account?</a><a href="singup.html">Singup</a>
+ '>Forget Account?</a><a href="singup.asp">Singup</a>
       <center>
 
 

@@ -24,7 +24,7 @@
         <label for="email">Email:</label><br>
         <input class="input" type="email" name="email" value="" placeholder="Enter A valid Email" required />
         <br>
-        <label for="username">username:</label><br>
+        <label for="username">Full Name:</label><br>
         <input class="input" type="username" name="username" id="username" pl value=""
           placeholder="Enter A new Username" required />
         <br>
@@ -40,7 +40,7 @@
 
           <button class="btn" type="submit">Singup</button>
           <br><br>
-          <a href="login.html">Login</a>
+          <a href="login.asp">Login</a>
         </center>
       </form>
 

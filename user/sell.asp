@@ -111,7 +111,7 @@
             <h1>Pay NOW</h1>
             <p>You need to pay $<span style="color: #4680ff;" id="usd"></span> USD</p>
             <br>
-            <label for="tokenname" class="lebel">Tokenname: <n>*</n></label>
+            <label for="tokenname" class="lebel">Address Token: <n>*</n></label>
             <select onchange="tokenchk()" name="tokenname" id="tokenopstion" class="input" required>
               <option disabled selected>---- select -----</option>
               <option value="bpi">Binance Pay ID</option>
@@ -120,21 +120,27 @@
 
             </select>
             <label for="address" class="label"></label>
-<input name="address" type="text" id="copy" class="input">
-<div id="vic" class="vcc" style="background-color: rgb(225, 225, 225);width: 100px;border-radius: 10px;padding: 10px;cursor: pointer;" onclick="copytext()">copy</div>
-
-<label for="transaction" class="label">Transaction ID: <n>*</n></label>
-<input oninput="transaction()" name="transaction" type="text" id="transaction" class="input">
+            <input name="address" type="text" id="copy" class="input">
+            <div id="vic" class="vcc"
+              style="background-color: rgb(225, 225, 225);width: 100px;border-radius: 10px;padding: 10px;cursor: pointer;"
+              onclick="copytext()">copy</div>
+<br>
+            <label for="transaction" class="label">Transaction ID: <n>*</n></label>
+            <input placeholder="Paste your Transaction" oninput="trans()" name="transaction" type="text" id="transaction" class="input" required>
 
 
             <input id="er" style="background-color: #4680ff;" type="submit" onclick="number4()" value="Conforim >>"
               class="input vcc">
           </div>
 
-          
+
 
         </form>
       </section>
+
+
+
+      <br><br><br><br><br>&copy;Crypto Cash P2P - <span id="name"></span> , <span id="jela"></span> <br><br>
     </center>
     <script src="buysell.js"></script>
     <script src="manuser.js"></script>
