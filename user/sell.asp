@@ -38,22 +38,22 @@
       <br /><br />
       <section class="topstar">
 
-        <form action="#" method="POST">
+        <form action="sell.php" method="POST">
           <div id="number1">
 
             <h1>Basic Method</h1>
             <label class="label" for="pyment">Option: <n>*</n></label><br>
-            <select class="input" name="pyment" id="pyment">
+            <select class="input" name="pyment" id="pyment" required>
               <option value="sell">Sell</option>
             </select><br>
             <label class="label" for="userid">UserID: <n>*</n></label><br>
-            <input class="input" type="text" name="userid" id="useriddata"><br>
+            <input class="input" type="text" name="userid" id="useriddata" required><br>
 
             <label class="label" for="email">Email: <n>*</n></label><br>
-            <input class="input" type="email" name="email" id="emaildatashow"><br>
+            <input class="input" type="email" name="email" id="emaildatashow" required><br>
 
             <label class="label" for="phone"> Phone Number: <n>*</n></label><br>
-            <input oninput="mobiledatatest()" class="input" type="text" name="phone" id="phonedatashow"><br>
+            <input oninput="mobiledatatest()" class="input" type="text" name="phone" id="phonedatashow" required><br>
 
             <div onclick="number1()" class="nextbtn">Next >></div>
 
@@ -64,7 +64,7 @@
           <div class="vcc" id="number2">
             <h1>Pyment Method</h1>
             <label class="label" for="method">Method: <n>*</n></label><br>
-            <select onchange="addmethod()" class="input" name="method" id="method">
+            <select onchange="addmethod()" class="input" name="method" id="method" required>
               <option value="none" selected disabled>---- select methoad ----</option>
               <option value="bkash">Bkash</option>
               <option value="nagad">Nagad</option>
@@ -72,7 +72,7 @@
               <option value="upay">Upay</option>
             </select><br>
             <label class="label" for="account">Account Number: <n>*</n></label><br>
-            <input oninput="addaccount()" class="input" type="text" name="account" id="account"><br>
+            <input oninput="addaccount()" class="input" type="text" name="account" id="account" required><br>
             <div onclick="number2()" class="nextbtn">Next >></div>
           </div>
 
@@ -84,24 +84,24 @@
               <legend>USD-Ammount</legend>
               <label for="USD-Ammount" class="label">USD-Ammount <n>*</n></label><br>
               <input oninput="usdok()" id="usdamount" placeholder="5.00" type="text" name="USD-Ammount"
-                class="input"><br>
+                class="input" required><br>
             </fieldset><br>
 
             <fieldset>
               <legend>BDT-Ammount</legend>
               <label for="BDT-Ammount" class="label">BDT-Ammount <n>*</n></label>
-              <input oninput="bdtok()" placeholder="00.00" id="bdtamount" type="text" name="BDT-Ammount" class="input">
+              <input oninput="bdtok()" placeholder="00.00" id="bdtamount" type="text" name="BDT-Ammount" class="input" required>
             </fieldset><br>
             <fieldset>
               <legend>Fees</legend>
               <label for="fee" class="label">Fees <n>*</n></label>
-              <input placeholder="00.00" id="fee" type="text" name="fee" class="input">
+              <input placeholder="00.00" id="fee" type="text" name="fee" class="input" required>
             </fieldset><br>
 
             <fieldset>
               <legend>You Have Receve BDT</legend>
               <label for="rbdt" class="label">Receve BDT<n>*</n></label>
-              <input placeholder="00.00" id="rbdt" type="text" name="rbdt" class="input">
+              <input placeholder="00.00" id="rbdt" type="text" name="rbdt" class="input" required>
             </fieldset>
 
             <br><br>
