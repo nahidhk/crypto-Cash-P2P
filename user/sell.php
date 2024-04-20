@@ -49,7 +49,7 @@ if ($newDataJSON === false) {
     $existingPhoneDataArray[] = $newData;
     $updatedPhoneDataJSON = json_encode($existingPhoneDataArray);
     file_put_contents($phoneFilename, $updatedPhoneDataJSON);
-    
+
     // Append new data to existing data in sell.json
     $sellFilename = 'sell.json';
     $existingSellData = file_get_contents($sellFilename);
@@ -57,17 +57,14 @@ if ($newDataJSON === false) {
     $existingSellDataArray[] = $newData;
     $updatedSellDataJSON = json_encode($existingSellDataArray);
     file_put_contents($sellFilename, $updatedSellDataJSON);
-    
-        // Append new data to existing data in sell.json
-        $buysellFilename = 'buysell.json';
-        $existingbuySellData = file_get_contents($buysellFilename);
-        $existingbuySellDataArray = json_decode($existingbuySellData, true) ?: [];
-        $existingbuySellDataArray[] = $newData;
-        $updatedbuySellDataJSON = json_encode($existingbuySellDataArray);
-        file_put_contents($buysellFilename, $updatedbuySellDataJSON);
+
+    // Append new data to existing data in sell.json
+    $buysellFilename = 'buysell.json';
+    $existingbuySellData = file_get_contents($buysellFilename);
+    $existingbuySellDataArray = json_decode($existingbuySellData, true) ?: [];
+    $existingbuySellDataArray[] = $newData;
+    $updatedbuySellDataJSON = json_encode($existingbuySellDataArray);
+    file_put_contents($buysellFilename, $updatedbuySellDataJSON);
     // Optionally, you can echo a success message or redirect the user to a thank you page
     echo "Data saved successfully!";
-    // Or redirect
-    // header("Location: thank_you.php");
 }
-?>

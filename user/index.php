@@ -7,11 +7,11 @@ if (isset($_GET['email'])) {
     $jsonData = file_get_contents($jsonFilePath);
 
     if ($jsonData !== false) {
-      // JSON ডেটা পার্স করুন
+
       $decodedData = json_decode($jsonData, true);
 
       if ($decodedData !== null) {
-        // JSON ডেটা সঠিকভাবে ডিকোড হয়েছে
+
 
 
 ?>
@@ -20,14 +20,10 @@ if (isset($_GET['email'])) {
 <?php
       } else {
 
-        echo "<script>window.location.href='login.asp'</script>"; // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
-
-        // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
-
+        echo "<script>window.location.href='login.asp'</script>";
       }
     } else {
-      echo "<script>window.location.href='login.asp'</script>"; // যদি শর্ত পূর্ণ না হয়, তবে 'not.html' ফাইলটি ইনক্লুড করা হবে
-
+      echo "<script>window.location.href='login.asp'</script>";
     }
   } else {
 
