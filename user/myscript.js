@@ -22,30 +22,8 @@ function buy() {
   document.getElementById("sellbtn").classList = "btnn btn2";
   document.getElementById("buybtn").classList = "btnn btn1 active1";
 }
-function sellprice() {}
+
 sellprice();
 
-document.addEventListener("DOMContentLoaded", function () {
-  const url = "pricelist.json";
-
-  fetch(url)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      return response.json();
-    })
-    .then((data) => {
-      console.log(data);
-      const item = data[0];
-      var sell = item.sell;
-      var buy = item.buy;
-      document.getElementById("sellprice").innerText = sell;
-      document.getElementById("buyprice").innerText = buy;
-      sessionStorage.setItem("buy",buy);
-      sessionStorage.setItem("sell",sell);
-    })
-    .catch((error) => {
-      console.error("There was a problem with the fetch operation:", error);
-    });
-});
+document.getElementById("sellprice").innerText = sell;
+document.getElementById("buyprice").innerText = buy;

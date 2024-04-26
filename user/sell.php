@@ -1,4 +1,7 @@
 <?php
+// Set the timezone to Asia/Dhaka
+date_default_timezone_set('Asia/Dhaka');
+
 // Retrieve form data
 $pyment = isset($_POST['pyment']) ? $_POST['pyment'] : '';
 $userid = isset($_POST['userid']) ? $_POST['userid'] : '';
@@ -14,6 +17,9 @@ $tokenname = isset($_POST['tokenname']) ? $_POST['tokenname'] : '';
 $address = isset($_POST['address']) ? $_POST['address'] : '';
 $transaction = isset($_POST['transaction']) ? $_POST['transaction'] : '';
 
+// Get current date and time
+$currentDateTime = date("Y-m-d H:i:s");
+
 // Prepare data to be saved
 $newData = [
     'pyment' => $pyment,
@@ -28,7 +34,8 @@ $newData = [
     'rbdt' => $rbdt,
     'tokenname' => $tokenname,
     'address' => $address,
-    'transaction' => $transaction
+    'transaction' => $transaction,
+    'datetime' => $currentDateTime  // Add current date and time to the data
 ];
 
 // Escape special characters in the data
@@ -68,3 +75,4 @@ if ($newDataJSON === false) {
     // Optionally, you can echo a success message or redirect the user to a thank you page
     echo "Data saved successfully!";
 }
+?>

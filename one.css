@@ -1,0 +1,27 @@
+.user-box{
+    height: 130px;
+    width: 130px;
+    padding: 10px;
+    border-radius: 100px;
+}
+.user-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 150px;    
+}
+ .pricing-card:hover .user-box{
+    border: 1px solid rgb(11, 209, 209);
+}
+
+
+
+/* foter */
+.foter{
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+}
+
+/*************footer End*****************/

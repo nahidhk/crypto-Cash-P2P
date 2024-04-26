@@ -93,7 +93,7 @@ function bdtok() {
   document.getElementById("fee").value = fee.toFixed(2);
   document.getElementById("rbdt").value = opto.toFixed(2);
 }
-
+ 
 function number3() {
   var datausd = sessionStorage.getItem("usd");
   document.getElementById("usd").innerHTML = datausd;

@@ -2,135 +2,191 @@
   font-family: font1;
   src: url("font/webfont.ttf");
 }
-body{
+
+body {
+
   font-family: font1;
   margin: 0;
   padding: 0;
-
+  background-color: #262626;
+  color: #d1d1d1;
 }
-.nav{
+
+.nav {
   z-index: 100;
   height: 70px;
   width: 100%;
-  background-color: #FFFFFF1F;
+  background-color: #0000006d;
   backdrop-filter: blur(6px);
-  position: fixed;
+  position: sticky;
   top: 0;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-.img-box{
+
+.icon {
+  color: #fff;
+  font-size: 35px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.icon:hover{
+  color: #4680ff;
+}
+
+.menu {
+  position: absolute;
+  left: 20px;
+  top: 13px;
+}
+
+.list-box {
+z-index: 100;
+  position: absolute;
+  height: auto;
+  width: 200px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 15pt;
+}
+
+.img-box {
   height: 70px;
   width: 70px;
 }
-.img-box img{
-  height: 100%;width: 100%;
+
+.img-box img {
+  height: 100%;
+  width: 100%;
 }
-.myani{
-animation: aniimg 1s ;  
-  
+
+.myani {
+  animation: aniimg 1s;
+
 }
-@keyframes aniimg{
-  0%{transform: rotateZ(0deg)}
-  100%{transform: rotateZ(360deg)}
+
+@keyframes aniimg {
+  0% {
+    transform: rotateZ(0deg)
+  }
+
+  100% {
+    transform: rotateZ(360deg)
+  }
 }
-.loginbtnbox{
+
+.loginbtnbox {
   position: absolute;
   right: 20px;
   top: 13px;
 }
-.btn{
+
+.btn {
   background-color: #4680ff;
- color: #fff;
- border: none;
- border-radius: 5px;
- height: 40px;
- width: auto;
- padding-left: 30px;
- padding-right: 30px;
- font-family: font1;
- cursor: pointer;
- font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: font1;
+  cursor: pointer;
+  font-size: 18px;
 }
-a{
+
+a {
   color: #4680ff;
   text-decoration-style: dotted;
 }
-a:active{
-    text-decoration-style: solid;
+
+a:active {
+  text-decoration-style: solid;
 
 }
-.bagal{
-  height: 350px;
-}
-.btn:hover{
+
+.btn:hover {
   background-color: #42445A00;
   color: #4680ff;
   border: 1px solid #4680ff;
 }
-.title{
-  font-size: 30px;
-  color: #059CFF;
-  border-left: 5px solid #059CFF;
-  background-color: #F1F1F1;
+
+.vcc {
+  display: none;
 }
-.vdio{
-  height: 200px;
-  width: 300px;
-  border: 1px solid #4680ff;
-  border-radius: 10px;
-  
+.ccv{
+  display: block;
 }
-.paragraph{
-  width: 48%;
-float: left;
+.app1 {
+  display: none;
 }
-.video{
-  width: 48%;
-float: right;
+
+.app2 {
+  display: block;
 }
 .app{
-  color: #fff;
-  background-color:#000000;
   border: 1px solid #4680ff;
-  width: 300px;
-  border-radius: 10px;
+  padding: 3px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15pt;
+}
+.app:hover{
+  background-color: #262626;
  
 }
-.appicon{
- font-size: 50px;
- color: white;
-}
-.appbox{
+.main-box{
+  height: 260px;
   width: 100%;
+
 }
-.myf{
-  background-color: #FFFFFF;
-  color: #007BFF;
+.box1{
+background-color: rgb(82, 32, 67);
+height: auto;
+font-size: 18pt;
+width: 75%;
+padding: 20px;
+border-radius: 11px;
+}
+.box2{
+  border: 1px solid #4680ff;
+  height: auto;
+  font-size: 18pt;
+  width: 70%;
+  padding: 20px;
+  border-radius: 9px;
+  font-size: 38px;
+  }
+
+
   
-}
-.git{
-  font-size: 33px;
-  margin: 30px;
-}
-.link{
-  margin:30px;
-  padding: 10px;
-}
+  
+  
 
-@media only screen and (max-width: 600px) {
-   .paragraph {
-     width: 100%;
-     float: none;
-   }
-   
-   .video {
-     width: 100%;
-     float: none;
-   
-   } 
-   .bagal{
-     height: auto;
-   }
+@media only screen and (max-width: 1000px) {
+  .app1 {
+    display: block;
+  }
 
+  .app2 {
+    display: none;
+  }
+
+  .list-box {
+    display: none;
+    position: absolute;
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+    color: #fff;
+    font-size: 15pt;
+  }
+  .box2{
+    border: 1px solid #4680ff;
+    height: auto;
+    font-size: 18pt;
+    width: 70%;
+    padding: 20px;
+    border-radius: 9px;
+    font-size: 24px;
+    }
 }
-

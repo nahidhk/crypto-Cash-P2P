@@ -221,6 +221,7 @@ if (isset($_GET['email'])) {
   <script src="myscript.js"></script>
   <script src="login.js"></script>
   <script src="ipdata.js"></script>
+  <script src="/app.js"></script>
 </body>
 
 </html>

@@ -2,6 +2,11 @@
 <html>
 
 <head>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="/user/login.css">
+  <link rel="stylesheet" href="one.css">
+  <link rel="stylesheet" href="card.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="manifest" href="manifest.json">
   <link rel="shortcut icon" type="image/x-icon" href="img/lite.jpg">
@@ -12,10 +17,19 @@
 </head>
 
 
-<body>
- 
+<body onscroll="scrolll()">
+  <main class="main">
 
     <section class="nav">
+      <div>
+
+        <span id="menu" onclick="menu()" class="icon menu app1">
+          <i class="bi bi-list"></i>
+        </span>
+        <span id="close" onclick="closed()" class="icon menu app2">
+          <i class="bi bi-x-lg"></i>
+        </span>
+      </div>
       <center>
 
         <div id="navimg" class="img-box myani">
@@ -30,113 +44,201 @@
         </button>
       </div>
     </section>
-    <br><br><br><br>
-    
+
+
+    <!-- new data type  -->
+    <section id="list-box" class="list-box">
+      <blockquote>
+        <p onclick="login()" class="app"><i class="bi bi-box-arrow-in-right"></i>&nbsp; Login</p>
+        <p onclick="singup()" class="app"><i class="bi bi-person-add"></i>&nbsp; SingUp</p>
         <center>
+          <p id="add-to-home-btn" class="app"><i class="bi bi-box-arrow-in-down"></i>&nbsp; Dowonload PWA </p>
+        </center>
+      </blockquote>
+    </section>
+    <br>
+    <!-- main paragarap box  -->
 
-    <blockquote class="twitter-tweet" data-media-max-width="560">
-      <p lang="en" dir="ltr">
-  <a href="https://t.co/vknqgnccwx"></a>
-  </p>
-  &mdash; Crypto Cash P2P (@cryptocashp2p) 
-  <a href="https://twitter.com/cryptocashp2p/status/1771389781127348582?ref_src=twsrc%5Etfw">
-    Loading....
-    </a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      
-    </center>
-    <section class="bagal">
-      <div class="paragraph">
-
-        <blockquote>
-
-          <span class="title">Crypto Cash P2P</span>
-          <p>Crypto Cash P2P Here you can convert your USD into Bangladeshi Taka and it will reach you through a digital transaction system.
+    <section class="main-box">
+      <center>
+        <!-- box 1 -->
+        <div class="box1">
+          <marquee>Crypto Cash P2P Here you can convert your USD into Bangladeshi Taka and it will reach you through a digital transaction system.
             And you can easily bring it in your hands.
             Not only that, from here you can buy dollars from us at budget prices with your money.
-            So all this information is kept from Telegram bot calledb<br> <a href="https://t.me/Cryptocashp2p_bot">Telegram bot</a>.
-            You can easily login or signup here.
-          </p>
-          <center>
-            <button onclick="login()" class="btn">Login</button>
-            <button onclick="singup()" class="btn">Singup</button>
+            So all this information is kept from Telegram bot calledb <a href="https://t.me/Cryptocashp2p_bot">Telegram bot</a>.
+            You can easily login or signup here.</marquee>
+        </div>
+        <br>
+        <!-- box2 -->
+        <div class="box2">
+          <span>Welcome to Crypto Cash P2P</span>
+        </div>
+      </center>
+    </section>
 
-          </center>
-        </blockquote>
+
+    <!-- card apps -->
+    <!-- sell card  -->
+    <section class="pricing-plans">
+      <div class="pricing-card basic">
+        <div class="heading">
+          <h4>Sell Crypto</h4>
+          <p>for USD crypto sell</p>
+        </div>
+        <p class="price">
+          $1 > <span id="isell"></span>
+          <sub>/BDT</sub>
+        </p>
+        <ul class="features">
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>Binance</strong> Pay ID
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>BEP20</strong> BNB Smart Chain
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>ERC20</strong> Ethereum
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>Polygon</strong>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>EOS</strong>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>24/7</strong> support
+          </li>
+        </ul>
+        <button onclick="login()" class="cta-btn">Sell</button>
+
+      </div>
+      <!-- buy card -->
+      <div class="pricing-card standard">
+        <div class="heading">
+          <h4> BUY</h4>
+          <p>for USD crypto sell</p>
+        </div>
+        <p class="price">
+          $1 > <span id="ibuy"></span>
+          <sub>/BDT</sub>
+        </p>
+        <ul class="features">
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>Binance</strong> Pay ID
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>BEP20</strong> BNB Smart Chain
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>ERC20</strong> Ethereum
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>Polygon</strong>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>EOS</strong>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>24/7</strong> support
+          </li>
+        </ul>
+        <button onclick="login()" class="cta-btn">buy</button>
       </div>
 
-      <div class="video">
+    </section>
+    <!-- marquee style -->
+    <br><br>
+    <section style="  justify-content: center;
+align-items: center;">
+      <center>
+        <div class="marquee">
+          <ul class="marquee-content">
+            <li><img src="https://cryptologos.cc/logos/binance-usd-busd-logo.svg?v=031" /></li>
+            <li><img src="https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=031" /></li>
+            <li><img src="https://cryptologos.cc/logos/tether-usdt-logo.svg?v=031" /></li>
+            <li><img src="https://cryptologos.cc/logos/bnb-bnb-logo.svg?v=031" /></li>
+            <li><img src="https://cryptologos.cc/logos/tron-trx-logo.svg?v=031" /></li>
+            <li><img src="https://cryptologos.cc/logos/bnb-bnb-logo.svg?v=031" /></li>
+            <li><img src="https://cryptologos.cc/logos/kucoin-token-kcs-logo.svg?v=031" /></li>
+            <li><img src="https://cryptologos.cc/logos/polygon-matic-logo.svg?v=031" /></li>
+            <li><img src="https://cryptologos.cc/logos/shiba-inu-shib-logo.svg?v=031" /></li>
+            <li><img src="https://cryptologos.cc/logos/dogecoin-doge-logo.svg?v=031" /></li>
+            <li><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=031" /></li>
+          </ul>
+        </div>
+      </center>
+    </section>
+    <!-- user profile -->
+    <br><br>
+    <section class="pricing-plans">
+      <div class="pricing-card basic">
 
-        <br><br>
-        <blockquote>
-
-          <iframe id="hello" onload="vdload()" class="vdio" src="https://www.youtube.com/embed/NDEWr9ZvYQ8?autoplay=1"></iframe>
-
-        </blockquote>
-
+        <div class="user-box ">
+          <img src="img/lite.jpg" />
+          <h2>Sabbir Rahaman</h2>
+        </div><br><br>
+        <p>Crypto Cash P2P <b>CEO</b></p>
 
       </div>
     </section>
 <br><br>
-<center>
-
-      <section class="appbox">
-
-        <div class="app" id="add-to-home-btn">
-          <br>
-
-
-          <i class="bi bi-windows appicon"></i>
-          <i class="appicon bi bi-apple"></i>
-          <i class="appicon bi bi-android2"></i>
-          <br>
-          Download PWA App <i class="bi bi-download"></i>
-          <br> <br>
-
-        </div>
-
-        </center>
-      </section>
-  
-  
-  <br><br>
-  
-  
-  <section>
-    <blockquote>
- <span class="title">Socal</span>     
+<footer class="foter">
+  <blockquote>
+    <h1>Cryptocashp2p</h1>
     <p>
-   <a href="https://twitter.com/cryptocashp2p" class="link">Twitter X</a><br>
-   <a href="https://t.me/Cryptocashp2p_bot" class="link">Telegram Bot</a><br>
-   <a href="#" class="link" class="link">Telegram Group</a><br>
-   <a href="#" class="link" class="link">Telegram Channel </a><br>
-   <a href="tel:09638-631634" class="link">09638-631634</a><br>
-   <a href="mailto:cryptocashp2p@gmail.com" class="link">cryptocashp2p@gmail.com</a><br>
-   <a href="mailto:info@cryptocashp2p.top" class="link">info@cryptocashp2p.top</a>
-      
-      
-    </p>  
-      
-      
-      
-    </blockquote>
-   <br> 
-   <center>
-    <a> &copy; cryptocashp2p.top</a>
-   </center>
-   <br> 
-    
-  </section>
+<a class="icon" href="#" onclick="telegram()"> <i class="bi bi-telegram"></i> </a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="icon" href="#" onclick="github()"> <i class="bi bi-github"></i> </a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a class="icon" href="#" onclick="tx()"> <i class="bi bi-twitter-x"></i> </a>
+    </p>
+    <samp>&copy;Cryptocashp2p - 2024</samp>
+  </blockquote>
+  </footer>
 
-  
+
+<!-- foter -->
  
- 
- 
-  
-  
-   
-      <!-- add script--->
-      <script src="app.js"></script>
- 
+
+
+
+
+    <!-- ===================== a script file============================= -->
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/662b41151ec1082f04e72d79/1hscfcff4';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+    <!-- side nav -->
+    <div></div>
+    <!-- add script--->
+    <script src="user/myscript.js"></script>
+    <script src="https://kit.fontawesome.com/ef06418601.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </main>
+
 </body>
 
 </html>
