@@ -2,57 +2,50 @@
 <html>
 
 <head>
-  <link rel="manifest" href="/manifest.json">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="btn.css">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="manifest" href="manifest.json">
-  <link rel="shortcut icon" type="image/x-icon" href="img/lite.jpg">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/lite.jpg">
   <link rel="stylesheet" href="login.css">
-  <link rel="stylesheet" href="/style.css">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Crypto Cash P2P</title>
+  <title>Crypto Cash P2P login</title>
 </head>
 
 <body>
+  <section class="bgimg">
+    <div class="boxgd">
+      <blockquote>
 
-  <section class="popup">
-    <blockquote>
-      <h1>Login</h1>
-      <form onsubmit="logapp()" action="login.php" method="post">
 
-        <label for="email">Email:</label><br />
-        <input placeholder="Enter Your Email" class="input" type="email" name="email" id="email" value="" required />
-        <br /><br />
-        <label for="password">Password:</label><br />
-        <input placeholder="Enter Your Password" class="input" type="password" name="password" id="password" value=""
-          required />
-        <br><br>
-        <center>
+        <h1 class="h1">Login Here</h1>
 
-          <button type="submit" class="btn">
-            Login
-          </button>
+        <form onsubmit="logapp()" action="login.php" method="post">
+
+          <div class="form__group field">
+            <input type="email" class="form__field" placeholder="Email" name="email" id='email' required />
+            <label for="email" class="form__label">Email</label>
+          </div><br>
+          <div class="form__group field">
+            <input type="password" class="form__field" placeholder="Password" name="password" id='password' required />
+            <label for="password" class="form__label">Password</label>
+          </div> <br><br>
+          <center>
+            <button type="submit" class="btn">
+              Login
+            </button>
+            <a href="singup.asp">Singup</a>
+            <a href="forget.asp">Forget Password</a>
+          </center>
+      </blockquote>
+
       </form>
 
-      <br> <br>
-      <a href='mailto: cryptocashp2p@gmail.com?&subject=Please Forgot My Password &body=
- Enter Your Email:  
- Enter Your Phone Number:   
- Enter Your username :  
- Enter Your Post Code :  
- '>Forget Account?</a><a href="singup.asp">Singup</a>
-      <center>
-
-
-    </blockquote>
+    </div>
   </section>
-
-
-
-
-
-  <script src="login.js"></script>
 </body>
 
 </html>

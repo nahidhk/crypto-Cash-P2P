@@ -1,38 +1,102 @@
-.popup{
-  height: auto;
-  width: 320px;
-  top: 40%;
-  left: 50%;
-  background-color: #DBDEFF;
-  transform: translate(-50%,-50%);
-  position: absolute;
-  border-radius: 7px;
+@font-face {
+  font-family: styletext;
+  src: url("/font/webfont.ttf");
 }
-.input{
+
+body{
+  margin: 0;
+  font-size: styletext;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  background-color: #222;
+}
+.bgimg{
+  background-image: url("https://cdn.hero.page/wallpapers/db4976d7-a3f9-499c-bb27-7f270e36c0e2-astronomical-bodies-art-wallpaper-wallpaper-3.png");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   
-  height: 36px;
-  border: 1px solid #4680ff;
 }
-.input{
-  text-align: center;
-  height: 40px;
-  width: 230px;
-  background-color: #DBDEFF00;
- font-family: font1;
-  outline: none;
-  color: #4680ff;
-  border: 1px solid #4680ff;
+ .boxgd{
+  backdrop-filter: blur(5px);
+  height: auto;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.818);
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ color: #d9d9d9;
+ border-radius: 10px;
+ font-size: styletext;
 }
-.icon{
-  font-size: 25px;
-  padding: 5px;
-  color: #4680ff;
+.h1{
+  font-family: styletext;
+  font-size: 2.5rem;
 }
-.error{
-  background-color: red;
- box-shadow: 0 0 10px 0 red;
-  padding: 20px;
+
+
+/* css input box */
+.form__group {
+  font-size: styletext;
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 90%;
+}
+.form__field {
+  font-size: styletext;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
   color: #fff;
-  text-align: center;
-  border-radius: 5px;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
 }
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+/* demo */
+

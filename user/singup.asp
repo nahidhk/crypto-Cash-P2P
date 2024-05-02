@@ -2,51 +2,65 @@
 <html>
 
 <head>
-  <link rel="manifest" href="/manifest.json">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="btn.css">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="manifest" href="manifest.json">
-  <link rel="shortcut icon" type="image/x-icon" href="img/lite.jpg">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/lite.jpg">
   <link rel="stylesheet" href="login.css">
-  <link rel="stylesheet" href="/style.css">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Crypto Cash P2P</title>
+  <title>Crypto Cash P2P singup</title>
 </head>
 
 <body>
 
-  <section class="popup">
+  <section class="bgimg">
+    <div class="boxgd">
     <blockquote>
       <form action="singup.php" method="post">
 
         <h1>Singup</h1>
-        <label for="email">Email:</label><br>
-        <input class="input" type="email" name="email" value="" placeholder="Enter A valid Email" required />
-        <br>
-        <label for="username">Full Name:</label><br>
-        <input class="input" type="username" name="username" id="username" pl value=""
-          placeholder="Enter A new Username" required />
-        <br>
-        <label for="mobile">Mobile:</label><br>
-        <input class="input" type="number" name="mobile" id="mobile" value="" placeholder="only use 'BD'+88 "
-          required />
-        <br>
 
-        <label for="password">Password:</label><br>
-        <input class="input" type="password" name="password" value="" placeholder="Enter A New password" required />
+        <div class="form__group field">
+
+        <input class="form__field" type="email" name="email" value="" placeholder="Enter A valid Email" required />
+
+        <label class="form__label" for="email">Email</label>
+</div>
+<div class="form__group field">
+        <input class="form__field" type="username" name="username" id="username" pl value=""
+          placeholder="Username" required />
+
+        <label class="form__label" for="username">Full Name</label><br>
+</div>
+<div class="form__group field">    
+        <input class="form__field" type="number" name="mobile" id="mobile" value="" placeholder="'BD'+88 "
+          required />
+
+        <label class="form__label" for="mobile">Mobile</label><br>
+</div>
+      
+<div class="form__group field">
+        <input class="form__field" type="password" name="password" value="" placeholder="Enter" required />
+
+        <label class="form__label" for="password">Password</label><br>
+
+      </div>
         <br><br>
         <center>
 
           <button class="btn" type="submit">Singup</button>
-          <br><br>
+       
           <a href="login.asp">Login</a>
         </center>
       </form>
 
     </blockquote>
 
-
+</div>
   </section>
 
 
