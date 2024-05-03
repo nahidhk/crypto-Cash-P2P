@@ -43,7 +43,7 @@ if (isset($_GET['email'])) {
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="buy.css">
+
   <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -56,31 +56,126 @@ if (isset($_GET['email'])) {
   <link rel="stylesheet" href="userstyle.css">
 </head>
 
-<body>
+<body onscroll="scrolll()" class="bodyy">
+
+
+
+
+
   <section class="nav">
+    <div>
 
-    <span class="title mar">Crypto Cash P2P </span>
+      <span id="menu" onclick="menu()" class="icon menu app1">
+        <i class="bi bi-list"></i>
+      </span>
+      <span id="close" onclick="closed()" class="icon menu app2">
+        <i class="bi bi-x-lg"></i>
+      </span>
+    </div>
 
-    <span onclick="menuicon()" class="usericon">
-      <i class="bi bi-person-circle"></i>
-    </span>
+    <div class="loginbtnbox">
+      <button title="Duble click to open profile" style="font-size:30px" onclick="profile()" class="btn">
+        <i class="bi bi-person-circle"></i>
+      </button>
+    </div>
   </section>
-  <br><br><br><br>
-  <center>
-    <marquee class="marquee">
-      <span id="userview"></span>
-    </marquee>
-  </center>
-  <div class="title">
-    Hello,<?php echo $decodedData['username'] ?>
-  </div>
+
+  <!-- load a new menu box data  -->
+
+
+  <section id="list-box" class="list-box">
+    <blockquote>
+      <!-- sell button -->
+      <p onclick="sell()" class="app">
+        <i class="bi bi-bag-check"></i>
+
+        &nbsp; Sell
+      </p>
+      <!-- buy button -->
+      <p onclick="buy()" class="app">
+        <i class="bi bi-bag"></i>
+
+        &nbsp; Buy
+      </p>
+      <!-- history button -->
+
+      <p onclick="history()" class="app">
+        <i class="bi bi-clock-history"></i>
+
+        &nbsp; History
+      </p>
+      <!-- setting -->
+      <p onclick="setting()" class="app">
+      <i class="bi bi-gear-wide"></i>
+
+        &nbsp; Setting
+      </p>
+      <!-- Profile -->
+      <p title="Duble click to open profile" onclick="profile()" class="app">
+      <i  class="bi bi-person-lines-fill"></i>
+
+        &nbsp; Profile
+      </p>
+      <!-- Giveaway -->
+
+      <p onclick="giveaway()" class="app">
+      <i class="bi bi-gift"></i>
+
+        &nbsp; Giveaway
+      </p>
+
+      <!-- logout button  -->
+      <p onclick="logout()" class="app">
+        <i class="bi bi-box-arrow-left"></i>
+        &nbsp; Logout
+      </p>
+
+
+    </blockquote>
+  </section>
 
 
 
-  <section id="menu" class="munu vcc">
+
+  <!-- the new data -->
+
+  <br><br>
+  <section class="main-box">
+    <center>
+      <!-- box 1 -->
+      <div class="box1">
+        <marquee>Crypto Cash P2P Here you can convert your USD into Bangladeshi Taka and it will reach you through a digital transaction system.
+          And you can easily bring it in your hands.
+          Not only that, from here you can buy dollars from us at budget prices with your money.
+          So all this information is kept from Telegram bot calledb <a href="https://t.me/Cryptocashp2p_bot">Telegram bot</a>.
+          You can easily login or signup here.</marquee>
+      </div>
+      <br>
+      <!-- box2 -->
+      <div class="box2">
+        <span>Hello , <?php echo $decodedData['username'] ?></span>
+      </div>
+    </center>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="profile" class="profile vcc">
     <blockquote>
 
-      <span class="title">Account </span>
+      <span class="title">Profile </span>
     </blockquote>
 
     <span onclick="myappclose()" class="usericon">
@@ -92,9 +187,7 @@ if (isset($_GET['email'])) {
       <img height="100" src="/img/user.png" alt="usericon">
       <h1> <?php echo $decodedData['username'] ?></h1>
       <p>Email: <?php echo $decodedData['email'] ?></p>
-      <button onclick="logout()" class="lopag">
-        singout
-      </button>
+    
     </center>
     <p>
     <blockquote style="color:#ff0000;font-size: 24px;">
@@ -222,6 +315,10 @@ if (isset($_GET['email'])) {
   <script src="login.js"></script>
   <script src="ipdata.js"></script>
   <script src="/app.js"></script>
+
+
+
+  </script>
 </body>
 
 </html>

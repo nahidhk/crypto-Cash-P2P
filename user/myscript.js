@@ -1,13 +1,6 @@
 console.log("This is a myscript");
 //let price = JSON.parse('{"sell":"120","buy":"125"}');
-function menuicon() {
-  document.getElementById("menu").classList =
-    "munu animate__animated animate__fadeInRight";
-}
-function myappclose() {
-  document.getElementById("menu").classList =
-    "munu animate__animated animate__fadeOutRight";
-}
+
 function local1() {}
 local1();
 function sell() {
@@ -27,3 +20,15 @@ sellprice();
 
 document.getElementById("sellprice").innerText = sell;
 document.getElementById("buyprice").innerText = buy;
+
+
+function profile() {
+  var profile = document.getElementById("profile");
+  if (profile.style.display === "none") {
+    profile.style.display = "block";
+  } else {
+    profile.style.display = "none";
+  }
+  
+}
+

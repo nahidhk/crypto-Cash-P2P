@@ -34,7 +34,7 @@ body{
  transform: translate(-50%,-50%);
  color: #d9d9d9;
  border-radius: 10px;
- font-size: styletext;
+ font-size: 1rem;
 }
 .h1{
   font-family: styletext;
@@ -100,3 +100,18 @@ body{
 }
 /* demo */
 
+@media only screen and (max-width: 1000px) {
+  .boxgd{
+    backdrop-filter: blur(5px);
+    height: auto;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.818);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   color: #d9d9d9;
+   border-radius: 10px;
+   font-size: 1rem;
+  }
+}

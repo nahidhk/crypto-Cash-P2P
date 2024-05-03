@@ -3,7 +3,7 @@
   
   
   .pricing-plans {
-    gap: 32px;
+    gap: 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -129,7 +129,7 @@
   
   .marquee {
     width: 80%;
-    height: 100px;
+    height: 120px;
     background-color:  #262626;
     color: #eee;
     overflow: hidden;
