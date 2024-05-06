@@ -48,6 +48,7 @@ if (isset($_GET['email'])) {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/card.css">
   <link rel="shortcut icon" type="image/x-icon" href="/img/lite.jpg">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,7 +73,14 @@ if (isset($_GET['email'])) {
         <i class="bi bi-x-lg"></i>
       </span>
     </div>
+    <center>
 
+      <div style="cursor: pointer;" id="navimg" class="img-box myani">
+        <img src="/img/bg.png">
+
+      </div>
+
+    </center>
     <div class="loginbtnbox">
       <button title="Duble click to open profile" style="font-size:30px" onclick="profile()" class="btn">
         <i class="bi bi-person-circle"></i>
@@ -106,20 +114,20 @@ if (isset($_GET['email'])) {
       </p>
       <!-- setting -->
       <p onclick="setting()" class="app">
-      <i class="bi bi-gear-wide"></i>
+        <i class="bi bi-gear-wide"></i>
 
         &nbsp; Setting
       </p>
       <!-- Profile -->
       <p title="Duble click to open profile" onclick="profile()" class="app">
-      <i  class="bi bi-person-lines-fill"></i>
+        <i class="bi bi-person-lines-fill"></i>
 
         &nbsp; Profile
       </p>
       <!-- Giveaway -->
 
       <p onclick="giveaway()" class="app">
-      <i class="bi bi-gift"></i>
+        <i class="bi bi-gift"></i>
 
         &nbsp; Giveaway
       </p>
@@ -157,20 +165,7 @@ if (isset($_GET['email'])) {
       </div>
     </center>
   </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <!-- profile  -->
 
   <section id="profile" class="profile vcc">
     <blockquote>
@@ -187,7 +182,7 @@ if (isset($_GET['email'])) {
       <img height="100" src="/img/user.png" alt="usericon">
       <h1> <?php echo $decodedData['username'] ?></h1>
       <p>Email: <?php echo $decodedData['email'] ?></p>
-    
+
     </center>
     <p>
     <blockquote style="color:#ff0000;font-size: 24px;">
@@ -215,6 +210,98 @@ if (isset($_GET['email'])) {
     </center>
 
   </section>
+
+
+  <!-- custom data appp -->
+  <section class="pricing-plans">
+      <div class="pricing-card basic">
+        <div class="heading">
+          <h4>Sell Crypto</h4>
+          <p>for USD crypto sell</p>
+        </div>
+        <p class="price">
+          $1 > <span id="isell"></span>
+          <sub>/BDT</sub>
+        </p>
+        <ul class="features">
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>Binance</strong> Pay ID
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>BEP20</strong> BNB Smart Chain
+          </li>       
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>Polygon</strong>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>EOS</strong>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>24/7</strong> support
+          </li>
+        </ul>
+        <button onclick="login()" class="cta-btn">Sell</button>
+
+      </div>
+      <!-- buy card -->
+      <div class="pricing-card standard">
+        <div class="heading">
+          <h4> BUY</h4>
+          <p>for USD crypto sell</p>
+        </div>
+        <p class="price">
+          $1 > <span id="ibuy"></span>
+          <sub>/BDT</sub>
+        </p>
+        <ul class="features">
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>Binance</strong> Pay ID
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>BEP20</strong> BNB Smart Chain
+          </li> 
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>Polygon</strong>
+          </li>
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>EOS</strong>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-check"></i>
+            <strong>24/7</strong> support
+          </li>
+        </ul>
+        <button onclick="login()" class="cta-btn">buy</button>
+      </div>
+
+    </section>
+  <!-- end  data -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!-- The buy opstion -->
@@ -315,10 +402,21 @@ if (isset($_GET['email'])) {
   <script src="login.js"></script>
   <script src="ipdata.js"></script>
   <script src="/app.js"></script>
-
-
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/662b41151ec1082f04e72d79/1hscfcff4';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
   </script>
+  <!--End of Tawk.to Script-->
+
+<script src="/tilt.js"></script>
 </body>
 
 </html>
