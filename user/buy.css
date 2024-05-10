@@ -1,3 +1,8 @@
+.body{
+    background-image: url("https://e0.pxfuel.com/wallpapers/503/728/desktop-wallpaper-leaves-plant-bw-chb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .btn-box{
     height: 50px;
     width: 300px;

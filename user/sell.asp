@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="userstyle.css">
 </head>
 
-<body>
+<body class="body">
 
   <section class="nav">
 
@@ -122,7 +122,7 @@
             <label for="address" class="label"></label>
             <input name="address" type="text" id="copy" class="input">
             <div id="vic" class="vcc"
-              style="background-color: rgb(225, 225, 225);width: 100px;border-radius: 10px;padding: 10px;cursor: pointer;"
+              style="background-color: rgb(0, 0, 0);width: 100px;border-radius: 10px;padding: 10px;cursor: pointer;color: #fff;"
               onclick="copytext()">copy</div>
 <br>
             <label for="transaction" class="label">Transaction ID: <n>*</n></label>

@@ -192,7 +192,7 @@
       --marquee-height: 16vh;
       --marquee-elements-displayed: 3;
     }
-    .marquee:before, .marquee:after { width: 5rem; }
+    .marquee:before, .marquee:after { width: 100%; }
   
 
     .pricing-card {
