@@ -22,12 +22,12 @@
   <section class="nav">
 
 
-    <span class="title mar">Crypto Cash P2P </span>
+    <span class="title">Crypto Cash P2P </span>
 
 
     </span>
   </section><br>
-  <br<br><br><br><br><br><br><br>
+  <br<br><br>
     <center>
       <section class="lock-box">
         <div id="set1" class="numberlock n-no_active">1</div>

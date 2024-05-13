@@ -1,4 +1,5 @@
 console.log("ip data script");
+
 xpdataip();
 
 function xpdataip(){

@@ -15,11 +15,11 @@ function buy() {
   document.getElementById("sellbtn").classList = "btnn btn2";
   document.getElementById("buybtn").classList = "btnn btn1 active1";
 }
+// error data
+// sellprice();
 
-sellprice();
-
-document.getElementById("sellprice").innerText = sell;
-document.getElementById("buyprice").innerText = buy;
+// document.getElementById("sellprice").innerText = sell;
+// document.getElementById("buyprice").innerText = buy;
 
 
 function profile() {

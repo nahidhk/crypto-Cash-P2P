@@ -215,7 +215,7 @@ if (isset($_GET['email'])) {
         <p>for USD crypto sell</p>
       </div>
       <p class="price">
-        $1 > <span id="isell"></span>
+        $1 > <span id="asell"></span>
         <sub>/BDT</sub>
       </p>
       <ul class="features">
@@ -251,7 +251,7 @@ if (isset($_GET['email'])) {
         <p>for USD crypto sell</p>
       </div>
       <p class="price">
-        $1 > <span id="ibuy"></span>
+        $1 > <span id="abuy"></span>
         <sub>/BDT</sub>
       </p>
       <ul class="features">
@@ -319,7 +319,7 @@ align-items: center;">
 <a class="icon" href="#" onclick="telegram()"> <i class="bi bi-telegram"></i> </a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a class="icon" href="#" onclick="github()"> <i class="bi bi-github"></i> </a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a class="icon" href="#" onclick="tx()"> <i class="bi bi-twitter-x"></i> </a>
-    </p>
+    </p> Customer Care : +880 9638631634<br>
     <samp>&copy;Cryptocashp2p - 2024</samp>
   </blockquote>
   </footer>
@@ -345,6 +345,7 @@ align-items: center;">
   <script src="login.js"></script>
   <script src="ipdata.js"></script>
   <script src="/app.js"></script>
+ 
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {},
@@ -362,6 +363,7 @@ align-items: center;">
   <!--End of Tawk.to Script-->
 
   <script src="/tilt.js"></script>
+  <script src="notojs.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+[
+    {
+        "sell.asp": {
+            "bynacepayid": {
+                "buysell.js": "if(if (tokok == 'bpi')",
+                "line": "112 > 115"
+            },
+            "bep20": {
+                "buysell.js": "if(if (tokok == 'bep20')",
+                "line": "119 > 122"
+            },
+            "trc20": {
+                "buysell.js": "if(if (tokok == 'trc20)",
+                "line": "126 > 129"
+            },
+            "sellfee": {
+                "buysell.js":" var fee = usdx * 0.02;",
+                "line":"78 and 90"
+            }
+        }
+    }
+]

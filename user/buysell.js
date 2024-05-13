@@ -65,35 +65,7 @@ function number2() {
   document.getElementById("set2").classList = "numberlock a-active";
 }
 
-// None of these are for fun. It is built with a very open language. May not go as depressed or other system system. It uses only calculation system. Please use the guitar. Cannot attempt to customer.
 
-var sellload = parseFloat(sessionStorage.getItem("sell"));
-var buy = parseFloat(sessionStorage.getItem("buy"));
-
-function usdok() {
-  var usdx = parseFloat(document.getElementById("usdamount").value);
-  var allusd = usdx * sellload;
-  document.getElementById("bdtamount").value = allusd;
-  sessionStorage.setItem("usd", usdx);
-  var fee = usdx * 0.02;
-  var feebdtsll = fee * sellload;
-  var feebdtsllTotal = allusd - feebdtsll;
-  document.getElementById("fee").value = fee.toFixed(2) + " USD";
-  document.getElementById("rbdt").value = feebdtsllTotal.toFixed(2) + "BDT";
-}
-
-function bdtok() {
-  var bdty = parseFloat(document.getElementById("bdtamount").value);
-  var allbdt = bdty / sellload;
-  document.getElementById("usdamount").value = allbdt.toFixed(2);
-  sessionStorage.setItem("usd", allbdt);
-  var fee = allbdt * 0.02;
-  var myrecev = fee * sellload;
-  var opto = bdty - myrecev;
-  document.getElementById("fee").value = fee.toFixed(2);
-  document.getElementById("rbdt").value = opto.toFixed(2);
-}
- 
 function number3() {
   var datausd = sessionStorage.getItem("usd");
   document.getElementById("usd").innerHTML = datausd;
@@ -157,3 +129,39 @@ var username = sessionStorage.getItem("username");
 var city = sessionStorage.getItem("city");
 document.getElementById("name").innerHTML=username;
 document.getElementById("jela").innerHTML=city;
+
+
+
+
+// None of these are for fun. It is built with a very open language. May not go as depressed or other system system. It uses only calculation system. Please use the guitar. Cannot attempt to customer.
+
+var sellload = parseFloat(sessionStorage.getItem("sell"));
+var buy = parseFloat(sessionStorage.getItem("buy"));
+
+function usdok() {
+  var usdx = parseFloat(document.getElementById("usdamount").value);
+  var allusd = usdx * sellload;
+  document.getElementById("bdtamount").value = allusd.toFixed(2); // Fixing to two decimal places
+  sessionStorage.setItem("usd", usdx);
+  var fee = usdx * 0.02;
+  var feebdtsll = fee * sellload;
+  var feebdtsllTotal = allusd - feebdtsll;
+  document.getElementById("fee").value = fee.toFixed(2) + " USD";
+  document.getElementById("rbdt").value = feebdtsllTotal.toFixed(2) + " BDT"; // Fixing to two decimal places
+}
+
+function bdtok() {
+  var bdty = parseFloat(document.getElementById("bdtamount").value);
+  var allbdt = bdty / sellload;
+  document.getElementById("usdamount").value = allbdt.toFixed(2); // Fixing to two decimal places
+  sessionStorage.setItem("usd", allbdt);
+  var fee = allbdt * 0.02;
+  var myrecev = fee * sellload;
+  var opto = bdty - myrecev;
+  document.getElementById("fee").value = fee.toFixed(2) + " USD"; // Adding "USD" suffix
+  document.getElementById("rbdt").value = opto.toFixed(2) + " BDT"; // Fixing to two decimal places and adding "BDT" suffix
+}
+
+
+
+   

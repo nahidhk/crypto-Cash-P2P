@@ -44,6 +44,8 @@
     background-color: rgb(13, 255, 0);
   }
   .topstar {
+    backdrop-filter: blur(5px);
+    background-color: #ffffff8c;
     width: 50%;
     padding: 30px;
     border-radius: 5px;

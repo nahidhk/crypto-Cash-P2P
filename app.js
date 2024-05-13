@@ -94,8 +94,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const item = data[0];
       var sell = item.sell;
       var buy = item.buy;
-      document.getElementById("isell").innerText = sell;
+      document.getElementById("aell").innerText = sell;
       document.getElementById("ibuy").innerText = buy;
+    
       sessionStorage.setItem("buy",buy);
       sessionStorage.setItem("sell",sell);
     })
