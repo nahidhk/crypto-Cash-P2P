@@ -67,20 +67,20 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
 
 //  the foter js 
 function login() {
-  window.location.href="/user/login.asp"
+  window.location.href="/user/login.html"
 }
 function singup() {
-  window.location.href="/user/singup.asp"
+  window.location.href="/user/singup.html"
 }
 function sell() {
-  window.location.href="/user/sell.asp"
+  window.location.href="/user/sell.html"
 }
 function buy() {
-  window.location.href="/user/buy.asp"
+  window.location.href="/user/buy.html"
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const url = "user/pricelist.json";
+  const url = "pricelist.json";
 
   fetch(url)
     .then((response) => {
@@ -94,9 +94,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const item = data[0];
       var sell = item.sell;
       var buy = item.buy;
-      document.getElementById("aell").innerText = sell;
+      document.getElementById("isell").innerText = sell;
       document.getElementById("ibuy").innerText = buy;
-    
+ 
       sessionStorage.setItem("buy",buy);
       sessionStorage.setItem("sell",sell);
     })

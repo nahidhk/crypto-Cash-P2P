@@ -78,7 +78,7 @@ function number3() {
 
 function tokenchk(){
   var tokok = document.getElementById("tokenopstion").value;
-
+ 
 
  
   if (tokok == "bpi") {
@@ -106,6 +106,7 @@ function tokenchk(){
 }
 
 function copytext(){
+  document.getElementById("vic").innerText="Copyed";
   // Get the text field
   var copyText = document.getElementById("copy");
 

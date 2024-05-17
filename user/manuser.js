@@ -1,4 +1,4 @@
 
 function sellbtn(){
-    window.location.href="sell.asp"
+    window.location.href="sell.html"
 }

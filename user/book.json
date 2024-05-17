@@ -1,6 +1,6 @@
 [
     {
-        "sell.asp": {
+        "sell.html": {
             "bynacepayid": {
                 "buysell.js": "if(if (tokok == 'bpi')",
                 "line": "112 > 115"

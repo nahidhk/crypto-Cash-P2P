@@ -73,7 +73,7 @@ if ($newDataJSON === false) {
     $updatedbuySellDataJSON = json_encode($existingbuySellDataArray);
     file_put_contents($buysellFilename, $updatedbuySellDataJSON);
     // Optionally, you can echo a success message or redirect the user to a thank you page
- 
+
 }
 
 ?>
@@ -82,9 +82,13 @@ if ($newDataJSON === false) {
 <html lang="en">
 
 <head>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $userid ?></title>
+    <title><?php echo $currentDateTime ?></title>
 </head>
 <style>
     table,
@@ -110,6 +114,66 @@ if ($newDataJSON === false) {
         height: 80px;
     }
 
+
+
+#btnbox{
+    position: fixed;
+    bottom: 10px;
+}
+button {
+    
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+button:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.popup{
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
+    /* background-color: #fffa1f; */
+    position: absolute;
+    backdrop-filter: blur(10px);
+    /* box-shadow: 0 0 10px 0 red; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
     @media only screen and (max-width: 600px) {
         .xbit {
             height: 300px;
@@ -129,7 +193,7 @@ if ($newDataJSON === false) {
             <b>
                 Date: <?php echo $currentDateTime ?><br>
                 UserEmail: <?php echo $email ?><br>
-                UserID: <?php echo $userid  ?><br>
+                Client Name: <span id="cname"></span><br>
                 Phone: <?php echo $phone ?>
 
             </b>
@@ -191,7 +255,7 @@ if ($newDataJSON === false) {
             <tr>
                 <td>You Have <?php echo $pyment ?> Crypto <?php echo $usdAmount ?> USD</td>
                 <td><?php echo $usdAmount ?></td>
-                <td></td>
+                <td><span id="sellaps"></span></td>
                 <td><?php echo $bdtAmount  ?></td>
                 <td><?php echo $fee ?></td>
                 <td><?php echo $rbdt ?></td>
@@ -202,14 +266,15 @@ if ($newDataJSON === false) {
 
 
     </blockquote>
-    <center>
-        <button onclick="window.location.href='login.asp'">
-            Skip</button><button title="ctrl+P" onclick="print();document.getElementById('ssw').style.display='none';">Print</button>
+
+    <center><div id="btnbox">
+        <button class="animate__tada animate__animated" onclick="window.location.href='login.html'">
+            Skip</button><button class="animate__tada animate__animated" title="ctrl+P" onclick="print();document.getElementById('ssw').style.display='none';">Print</button></div>
     </center>
     <br><br><br><br><br><br><br><br><br>
     <center>
 
-        <div id="ssw" style="border: 1px solid blue;padding: 10px;width: 300px;">
+        <div id="ssw" class="popup">
             <h1>Help Line</h1>
             <hr>
             <p>Customer Care : +880 9638631634
@@ -221,17 +286,133 @@ if ($newDataJSON === false) {
     </center>
 
 </body>
-<script>alert("Please wait five minutes or more. If you still don't get what you owe then contact any of our operators again.")</script>
+<script>
+    alert("Please wait five minutes or more. If you still don't get what you owe then contact any of our operators again.");
+    function aptmet(){
+        document.getElementById("ssw").style.display="none";
+        document.getElementById("btnbox").style.display="block";
+
+}
+setTimeout(aptmet,4000);
+function rate(){
+    var rate = sessionStorage.getItem("sell");
+    var cname = sessionStorage.getItem("username");
+    document.getElementById("sellaps").innerHTML=rate;
+    document.getElementById("cname").innerHTML=cname;
+ 
+}
+setTimeout(rate,4100);
+</script>
+
 </html>
 
 
 
 
 
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $userEmail = $_POST["email"];
+    // Assuming you have a password stored securely, otherwise never send passwords via email
+    
+    // Send confirmation email
+    $to = $userEmail;
+    $subject = "Dear client you have crypto cash p2p just sell now!";
+    $message = "
+    <center>
+    <h1>Crypto Cash P2P</h1>
+    <p>The crypto buy and sell this www.cryptocashp2p.top in bangladesh</p>
+    <p>Phone: +880 9638631634 &nbsp;&nbsp;&nbsp;Email: cryptocashp2p@gmail.com &nbsp;&nbsp;&nbsp; Website:
+        www.cryptocashp2p.top</p>
+</center>
+<blockquote>
+    <p>
+        <b>
+            Date: $currentDateTime <br>
+            UserEmail: $email <br>
+            Client Name: <span id='cname'>$userid</span><br>
+            Phone: $phone 
+
+        </b>
+    </p>
+</blockquote>
+<!-- hay data  -->
+<section class='xbit'>
+    <center>
+        <div class='top'>
+            <table>
+                <tr>
+                    <td>Account Number:  $account </td>
+                </tr>
+                <tr>
+                    <th>Methoad : $ethodm </th>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class='top'>
+            <table>
+                <tr>
+                    <td>Token Name: $tokenname  </td>
+                </tr>
+                <tr>
+                    <th>Transaction Id:  $transaction </th>
+                </tr>
+            </table>
+        </div>
+
+        <div class='top'>
+            <table>
+                <tr>
+                    <td>Pyment Address:  $address </td>
+                </tr>
+                <tr>
+                    <th>Select Pyment:  $pyment </th>
+                </tr>
+            </table>
+        </div>
+    </center>
+
+</section>
+<h2 style='text-align: center;'> $pyment </h2>
+<hr>
+<blockquote>
+    <br><br>
+    <table style='width: 100%;'>
+        <tr style='padding: 5px;background-color: rgb(206, 206, 206);'>
+            <th>Pyment Crypto</th>
+            <th>usdAmount</th>
+            <th>Rate</th>
+            <th>bdtAmount</th>
+            <th>Fee</th>
+            <th>Receive Ammount </th>
+
+        </tr>
+        <tr>
+            <td>You Have  $pyment  Crypto $usdAmount USD</td>
+            <td>$usdAmount </td>
+            <td><span>only print show</span></td>
+            <td>$bdtAmount  </td>
+            <td> $fee </td>
+            <td>$rbdt </td>
+        </tr>
+    </table>
 
 
 
 
+</blockquote>
 
+    ";
+    $headers = "From: cryptocashp2p@cryptocashp2p.top\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
+    // Send email
+    mail($to, $subject, $message, $headers);
 
+    // Respond to the client-side
+  
+}
+?>

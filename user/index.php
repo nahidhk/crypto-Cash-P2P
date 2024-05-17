@@ -20,19 +20,19 @@ if (isset($_GET['email'])) {
 <?php
       } else {
 
-        echo "<script>window.location.href='/user/login.asp'</script>";
+        echo "<script>window.location.href='/user/login.html'</script>";
       }
     } else {
-      echo "<script>window.location.href='/user/login.asp'</script>";
+      echo "<script>window.location.href='/user/login.html'</script>";
     }
   } else {
 
 
-    echo "<script>window.location.href='/user/singup.asp'</script>";
+    echo "<script>window.location.href='/user/singup.html'</script>";
   }
 } else {
 
-  echo "<script>window.location.href='/user/login.asp'</script>";
+  echo "<script>window.location.href='/user/login.html'</script>";
 }
 ?>
 
