@@ -90,9 +90,19 @@
   }
   
   /* ================================== css mobile ===================== */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
+    .profile{
+      z-index: 100;
+      height: 100vh;
+      width: 100%;
+      background-color: #00000083;
+      backdrop-filter: blur(10px);
+      position: fixed;
+      right: 0;
+      top: 0;
+    }
     .topstar {
-      width: 95%;
+      width: 100%;
       padding: 10px;
       border-radius: 5px;
       border: 1px solid #4680ff;

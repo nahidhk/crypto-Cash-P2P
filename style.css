@@ -172,7 +172,7 @@ border-radius: 11px;
   
   
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
   .app1 {
     display: block;
   }
@@ -182,9 +182,10 @@ border-radius: 11px;
   }
 
   .list-box {
+  
     display: none;
-    position: absolute;
-    height: auto;
+    position: fixed;
+    height: 93vh;
     width: 100%;
     background-color: #000000;
     color: #fff;

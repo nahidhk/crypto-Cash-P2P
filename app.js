@@ -40,13 +40,13 @@ window.addEventListener('load', () => {
 function menu() {
  document.getElementById("menu").classList='vcc icon menu ';
  document.getElementById("close").classList='ccv icon menu';
-document.getElementById("list-box").classList="ccv list-box";
+document.getElementById("list-box").style.display="block";
 }
 // close menu
 function closed() {
   document.getElementById("menu").classList='ccv icon menu ';
   document.getElementById("close").classList='vcc icon menu ';
-  document.getElementById("list-box").classList="vcc list-box";
+  document.getElementById("list-box").style.display="none";
 
 }
 function scrolll(){
