@@ -162,6 +162,7 @@ button:focus {
 }
 
 .popup{
+    border-radius: 6px;
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -173,6 +174,8 @@ button:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50% ,-50%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border: 1px solid black;
 }
     @media only screen and (max-width: 600px) {
         .xbit {
@@ -282,6 +285,10 @@ button:focus {
             <p>Sabbir CEO : +880173849412 </p>
             <p>Nahidul Manager : +8801877357091</p>
             <p>Email Manager : cryptocashp2p@gmail.com</p>
+            <br>
+            <button onclick="aptmet()">
+                Close
+            </button>
         </div>
     </center>
 
@@ -293,7 +300,7 @@ button:focus {
         document.getElementById("btnbox").style.display="block";
 
 }
-setTimeout(aptmet,4000);
+// setTimeout(aptmet,4000);
 function rate(){
     var rate = sessionStorage.getItem("sell");
     var cname = sessionStorage.getItem("username");

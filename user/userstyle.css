@@ -102,8 +102,9 @@
       top: 0;
     }
     .topstar {
-      width: 100%;
-      padding: 10px;
+      width: 80%;
+      padding-top: 10px;
+      padding-bottom: 10px;
       border-radius: 5px;
       border: 1px solid #4680ff;
       -webkit-border-radius: 5px;
@@ -114,6 +115,6 @@
     .lock-box {
       display: flex;
       justify-content: space-evenly;
-      width: 100%;
+      width: 80%;
     }
   }
