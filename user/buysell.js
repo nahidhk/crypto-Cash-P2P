@@ -1,3 +1,9 @@
+var trc = "TLhpt7UPsagg3znTD3ZQsNQaT4hJ7E85hY";
+var bep = "0xbab445cd87e79970f35a4175eaf2a46216c89e09";
+var bpii = "844381366"
+
+
+
 var loaduserid = sessionStorage.getItem("userid");
 document.getElementById("useriddata").value = loaduserid;
 
@@ -53,16 +59,33 @@ function addmethod() {
   }
 }
 
-function number2() {
+
+
+
+
+
+function number2(){
+
   var setmymathoad = document.getElementById("method").value;
   var setaccountnumber = document.getElementById("account").value;
   localStorage.setItem(setmymathoad, setaccountnumber);
+  
 
   document.getElementById("number2").classList =
     "animate__bounceOutLeft animate__animated vcc";
   document.getElementById("number3").classList =
     "animate__bounceInRight animate__animated";
   document.getElementById("set2").classList = "numberlock a-active";
+}
+function intanumber() {
+  var buydatastp = document.getElementById("buyadData").value;
+  var savedarrybuydata = document.getElementById("buysave").value; 
+  localStorage.setItem(buydatastp,savedarrybuydata);
+  document.getElementById("number2").classList =
+  "animate__bounceOutLeft animate__animated vcc";
+document.getElementById("number3").classList =
+  "animate__bounceInRight animate__animated";
+document.getElementById("set2").classList = "numberlock a-active";
 }
 
 
@@ -76,37 +99,37 @@ function number3() {
   document.getElementById("set3").classList = "numberlock a-active";
 }
 
-function tokenchk(){
+function tokenchk() {
   var tokok = document.getElementById("tokenopstion").value;
- 
 
- 
+
+
   if (tokok == "bpi") {
-    document.getElementById('copy').value="1";
-    document.getElementById("vic").style.display="block";
+    document.getElementById('copy').value = bpii;
+    document.getElementById("vic").style.display = "block";
   } else {
-    
+
   }
 
   if (tokok == "bep20") {
-    document.getElementById('copy').value="2";
-    document.getElementById("vic").style.display="block";
+    document.getElementById('copy').value = bep;
+    document.getElementById("vic").style.display = "block";
   } else {
-    
+
   }
 
   if (tokok == "trc20") {
-    document.getElementById('copy').value="3";
-    document.getElementById("vic").style.display="block";
+    document.getElementById('copy').value = trc;
+    document.getElementById("vic").style.display = "block";
   } else {
-   
+
   }
 
 
 }
 
-function copytext(){
-  document.getElementById("vic").innerText="Copyed";
+function copytext() {
+  document.getElementById("vic").innerText = "Copyed";
   // Get the text field
   var copyText = document.getElementById("copy");
 
@@ -116,20 +139,20 @@ function copytext(){
 
   // Copy the text inside the text field
   navigator.clipboard.writeText(copyText.value);
-  
+
   // Alert the copied text
 
 }
 
-function trans(){
-  document.getElementById("er").style.display="block";
+function trans() {
+  document.getElementById("er").style.display = "block";
   document.getElementById("set4").classList = "numberlock a-active";
 }
 
 var username = sessionStorage.getItem("username");
 var city = sessionStorage.getItem("city");
-document.getElementById("name").innerHTML=username;
-document.getElementById("jela").innerHTML=city;
+document.getElementById("name").innerHTML = username;
+document.getElementById("jela").innerHTML = city;
 
 
 
@@ -165,4 +188,35 @@ function bdtok() {
 
 
 
-   
+
+
+
+// buy.html all data load this file
+function addsavedata() {
+
+}
+
+
+var buybpi = localStorage.getItem("bpi");
+var buybep20 = localStorage.getItem("bep20");
+var buytrc20 = localStorage.getItem("trc20");
+function buyaddata() {
+  var buydatastp = document.getElementById("buyadData").value;
+var modshowbuy = document.getElementById("buysave");
+
+
+  if (buydatastp === "bpi") {
+    modshowbuy.value=buybpi;
+  }
+
+  if (buydatastp === "bep20") {
+    modshowbuy.value=buybep20;
+  }
+
+  if (buydatastp === "trc20") {
+    modshowbuy.value=buytrc20;
+  }
+
+}
+
+
